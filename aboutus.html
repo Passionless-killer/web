@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-pagination-bullet {
+        width: 200px;
+        border-radius: 4px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        font-size: 12px;
+        color: #fff;
+        opacity: 1;
+        background: #9c9c9c;
+      }
+
+      .swiper-pagination-bullet-active {
+        color: #fff;
+        background: #d1221e;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div>企业优势/ENTERPRISE ADVANTAGESs</div>
+    <div class="swiper mySwiper">
+      <div class="swiper-pagination" style="top: 10px"></div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div style="text-align: left">
+            <div style="display: flex; margin-bottom: 2vw">
+              <img
+                src="./web/about6.png"
+                style="width: 35%; margin-right: 2vw"
+              />
+              <img
+                src="./web/about7.png"
+                style="width: 35%; margin-right: 2vw"
+              />
+              <div style="display: flex; flex-direction: column">
+                <img src="./web/about8.png" style="margin-bottom: 2vw" />
+                <img src="./web/about9.png" />
+              </div>
+            </div>
+            <p style="color: #0d7a22">
+              <img
+                src="./web/about10.png"
+                style="
+                  width: 30px;
+                  display: inline-block;
+                  vertical-align: middle;
+                "
+              />
+              中国·吉祥石塘 渔业巨轮/ 东海鱼仓/蓝色港湾
+            </p>
+            <p>
+              公司位于新千年第一缕曙光首照地--石塘，素有“东方鱼糜生产基地”
+              “中国鱼虾之乡”“中国捕捞大镇”等称号。
+            </p>
+            <p>
+              拥有捕捞大型渔船2000余艘，年优质水产捕捞量达50多万吨，据统计，全国70%海水鱼糜都从石塘发往各地，是名副其实的“蓝色粮仓”。
+            </p>
+            <p>
+              拥有捕捞大型渔船2000余艘，年优质水产捕捞量达50多万吨，据统计，全国70%海水鱼糜都从石塘发往各地，是名副其实的“蓝色粮仓”。
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div style="text-align: left">
+            <img src="./web/about11.png" />
+            <p style="color: #0d7a22">
+              <img
+                src="./web/about10.png"
+                style="
+                  width: 30px;
+                  display: inline-block;
+                  vertical-align: middle;
+                "
+              />
+              资质荣誉
+            </p>
+            <p>
+              20多年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。
+            </p>
+            <p>骏马集团”飞奔向前，共创未来，给您最好服务!</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div style="text-align: left">
+            <img src="./web/about12.png" />
+            <p style="color: #0d7a22">
+              <img
+                src="./web/about10.png"
+                style="
+                  width: 30px;
+                  display: inline-block;
+                  vertical-align: middle;
+                "
+              />
+              以匠心·守初心
+            </p>
+            <p>
+              公司拥有一支国际化标准研发团队，在完善经典产品的同时，积极不地推出独树一帜的创新产品。
+            </p>
+            <p>
+              骏2022年4月，公司与台州科技职业技术学院达成友好合作协议，将为公司人才储备及产品研发的科学性提供强大的支持。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="./swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const title = ["资源优势", "行业地位", "研发优势"];
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return (
+              '<span class="' + className + '">' + title[index] + "</span>"
+            );
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
