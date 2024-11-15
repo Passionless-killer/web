@@ -1,154 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Swiper demo</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-    />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
 
-    <!-- Demo styles -->
-    <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./index.css" rel="stylesheet" />
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.js"> </script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js.map"> </script>
 
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
+  <!-- <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
+  <link href="./index.css" rel="stylesheet" />
+  <link href="./production.css" rel="stylesheet" />
+  <!-- <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> -->
+</head>
 
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
+<body>
+  <div id="production">
+    <div class="box">
+      <p class="text-2xl title text-center mb-1">产品中心<br /><span class="text-2xl">PRODUCT CENTER</span>
+      </p>
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .swiper-pagination-bullet {
-        width: 200px;
-        border-radius: 4px;
-        height: 36px;
-        text-align: center;
-        line-height: 36px;
-        font-size: 12px;
-        color: #fff;
-        opacity: 1;
-        background: #9c9c9c;
-      }
-
-      .swiper-pagination-bullet-active {
-        color: #fff;
-        background: #d1221e;
-      }
-      
-      .item{
-        border: 1px solid #f6f6f6;
-    box-shadow: 6px 6px 6px #f0f0f0;
-    width: 23%;
-      }
-    </style>
-  </head>
-
-  <body>
-    <!-- Swiper -->
-    <div><p>产品中心 </p><p></p>
-PRODUCT CENTER</p></div>
-    <div class="swiper mySwiper">
-      <div class="swiper-pagination" style="top: 10px"></div>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-         <div style="display: flex;    justify-content: space-between;">
-            <div class="item">
-                <img src="./web/about6.png"/>
-                <p>鱼丸</p>
-            </div>
-               <div class="item">
-                <img src="./web/about6.png"/>
-                <p>虾丸</p>
-            </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-pagination" style="top: 10px;width: 100%"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flex justify-between bg-white flex-wrap">
               <div class="item">
-                <img src="./web/about6.png"/>
+                <img src="./web/about6.png" />
+                <p>鱼丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>虾丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
                 <p>风味牛肉丸</p>
-            </div>
-                <div class="item">
-                <img src="./web/about6.png"/>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
                 <p>撒尿牛肉丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>鱼丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>虾丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>风味牛肉丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>撒尿牛肉丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>鱼丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>虾丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>风味牛肉丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>撒尿牛肉丸</p>
+              </div>
             </div>
-         </div>
-        </div>
-        <div class="swiper-slide">
-        
-        </div>
-        <div class="swiper-slide">
-         
-        </div>
-         <div class="swiper-slide">
-         
-        </div>
-         <div class="swiper-slide">
-         
+          </div>
+          <div class="swiper-slide">
+            <div class="flex justify-between bg-white flex-wrap">
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>鱼丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>虾丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>风味牛肉丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>撒尿牛肉丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>鱼丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>虾丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>风味牛肉丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>撒尿牛肉丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>鱼丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>虾丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>风味牛肉丸</p>
+              </div>
+              <div class="item">
+                <img src="./web/about6.png" />
+                <p>撒尿牛肉丸</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+
+          </div>
+          <div class="swiper-slide">
+
+          </div>
+          <div class="swiper-slide">
+
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  <!-- Swiper JS -->
+  <script src="./index.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="./swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      const title = [
-        "火锅丸系列",
-        "关东煮系列",
-        "菜肴系列",
-        "海制品系列",
-        "小包装系列",
-      ];
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          renderBullet: function (index, className) {
-            return (
-              '<span class="' + className + '">' + title[index] + "</span>"
-            );
-          },
+  <!-- Initialize Swiper -->
+  <script>
+    const title = [
+      "火锅丸系列",
+      "关东煮系列",
+      "菜肴系列",
+      "海制品系列",
+      "小包装系列",
+    ];
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return (
+            '<span class="' + className + '">' + title[index] + "</span>"
+          );
         },
-      });
-    </script>
-  </body>
+      },
+    });
+  </script>
+</body>
+
 </html>

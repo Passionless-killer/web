@@ -1,0 +1,27 @@
+#area {
+  @media (min-width: 1100px) {
+    .item > picture {
+      width: 60%;
+    }
+
+    .intro {
+      width: 40%;
+      padding: 20px 40px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .item > img {
+      width: 100%;
+    }
+    .intro {
+      flex-direction: row;
+      padding: 12px;
+    }
+    .intro > div {
+      width: 50%;
+    }
+    .detailHide {
+      display: none;
+    }
+  }
+}
