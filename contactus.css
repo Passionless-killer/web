@@ -1,6 +1,14 @@
 #contact {
-  .contactInfo > div {
-    width: 30%;
-    text-align: center;
+  @media (min-width: 1100px) {
+    .contactInfo > div {
+      width: 30%;
+      text-align: center;
+    }
+  }
+  @media (max-width: 1100px) {
+    .contactInfo > div {
+      width: 100%;
+      text-align: center;
+    }
   }
 }

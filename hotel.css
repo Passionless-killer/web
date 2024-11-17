@@ -4,10 +4,17 @@
       margin-top: 16px;
     }
     .btn {
-      padding: 4px 6px;
+      padding: 0px 10px;
     }
     .area {
       padding: 12px;
+    }
+    .about > div {
+      width: 100%;
+    }
+    .roomtype>picture:nth-child(-n+4){
+      width: 49%;
+      margin-bottom: 2vw;
     }
   }
   @media (min-width: 1100px) {
@@ -22,6 +29,12 @@
     }
     form select {
       height: 50px;
+    }
+    .about > div {
+      width: 50%;
+    }
+    .roomtype > picture {
+      width: 20%;
     }
   }
 }

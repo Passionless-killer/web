@@ -17,11 +17,12 @@
       flex-direction: row;
       padding: 12px;
     }
-    .intro > div {
-      width: 50%;
+    > div:nth-child(2) {
+      flex-direction: column-reverse;
     }
-    .detailHide {
-      display: none;
+  
+    .detailcenter{
+      text-align: center;
     }
   }
 }

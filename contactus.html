@@ -52,33 +52,50 @@
             <div class="burger-line3"></div>
         </div>
     </header>
-    <div class="swiper " id="swiper">
+
+    <div class="swiper pb-2 bg-[#f6f6f6]" id="swiper ">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="./imgs/slide1.jpg" class="d-block w-100" alt="..." />
+                <picture class="d-block w-100">
+                    <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide1.jpg" />
+                    <source media="(min-width: 1100px)" srcset="./imgs/pc/slide1.jpg" />
+                    <img class="" width="100%" src="./imgs/pc/slide1.jpg" alt=" ">
+                </picture>
                 <div class="title ">
-                    <p class="text-2xl leading-loose">"骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
+                    <p class="text-xl leading-loose">"骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
                         每一位消费者及合作伙伴,做到尽善尽美。</p>
                 </div>
             </div>
-            <div class="swiper-slide"> <img src="./imgs/slide2.jpg" class="d-block w-100" alt="..." />
+            <div class="swiper-slide">
+                <picture class="d-block w-100">
+                    <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide2.jpg" />
+                    <source media="(min-width: 1100px)" srcset="./imgs/pc/slide2.jpg" />
+                    <img class="" width="100%" src="./imgs/pc/slide2.jpg" alt=" ">
+                </picture>
                 <div class="title ">
-                    <p class="text-2xl leading-loose">是&emsp;住&emsp;宿&emsp;/&emsp;也&emsp;是&emsp;度&emsp;假&emsp;/&emsp;
-                        更&emsp;是&emsp;
-                        观&emsp;
-                        光&emsp;
-                        <br /> 国&nbsp;潮&nbsp;唐&nbsp;风&nbsp;度&nbsp;假&nbsp;酒&nbsp;店&emsp;&emsp;
-                        黄&nbsp;金&nbsp;旅&nbsp;游&nbsp;地&nbsp;段
-                        休&nbsp;闲&nbsp;度&nbsp;假&nbsp;胜&nbsp;地&emsp;&emsp;
-                        感&nbsp;受&nbsp;非&nbsp;凡&nbsp;的&nbsp;入&nbsp;住&nbsp;体&nbsp;验
-                    </p>
+                    <p class="text-2xl leading-loose wordspace">是住宿&ensp;/&ensp;也是度假&ensp;/&ensp;更是观光</p>
+                    <div class="text-base leading-loose text-center warp">
+                        <p>
+                            国潮唐风度假酒店&emsp;
+                            黄金旅游地段&emsp;
+                        </p>
+                        <p>
+                            休闲度假胜地&emsp;
+                            感受非凡的入住体验
+                        </p>
+                    </div>
                     <p class="text-xl leading-loose"></p>
                 </div>
             </div>
-            <div class="swiper-slide"> <img src="./imgs/slide3.jpg" class="d-block w-100" alt="..." />
+            <div class="swiper-slide">
+                <picture class="d-block w-100">
+                    <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide3.jpg" />
+                    <source media="(min-width: 1100px)" srcset="./imgs/pc/slide3.jpg" />
+                    <img class="" width="100%" src="./imgs/pc/slide3.jpg" alt=" ">
+                </picture>
                 <div class="title ">
-                    <p class="text-2xl leading-loose">"骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
-                        每一位消费者及合作伙伴,做到尽善尽美。</p>
+                    <p class="text-base leading-loose">
+                        20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!</p>
                 </div>
             </div>
         </div>
@@ -88,23 +105,24 @@
     </div>
 
     <div class="box bg-[#F0f0f0]  ">
-        <p class="text-2xl title mb-4">联系方式</p>
+        <p class="text-2xl title ">联系方式</p>
         <div class="flex-wrap flex justify-between contactInfo">
-            <div class="bg-[#F6f6f6] py-8">
+            <div class="bg-[#F6f6f6] py-8 my-8">
                 <p>客服电话</p>
                 <p>0576-8672 6001/0576-8672 6002</p>
             </div>
-            <div class="bg-[#F6f6f6] p-8">
+            <div class="bg-[#F6f6f6] p-8 my-8">
                 <p>传真</p>
                 <p>0576-8672 6003</p>
             </div>
-            <div class="bg-[#F6f6f6] p-8">
+            <div class="bg-[#F6f6f6] p-8 my-8">
                 <p>地址</p>
                 <p>浙江省台州市温岭市石塘镇启明路16号</p>
             </div>
         </div>
 
     </div>
+    
     <div class="box  ">
         <p class="text-2xl title mb-4">我们的位置</p>
         <div id="map" class="w-100 h-72"></div>
@@ -125,12 +143,12 @@
             scrollWheel: true,
             zoom: 18,
             dragEnable: true,
-            center:  [121.605051, 28.345217]
+            center: [121.605051, 28.345217]
         });
 
         new AMap.Marker({
             map: map,
-            position:  [121.605051, 28.345217]
+            position: [121.605051, 28.345217]
         });
         // $(document).on("click", ".con_map", function () {
         //     // window.location.href = "https://uri.amap.com/marker?position= + <?php echo $contactInfo['lal']; ?>";
