@@ -1,306 +1,716 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js.map"></script>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="./index.css" rel="stylesheet" />
-  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.js"> </script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js.map"> </script>
+    <!-- <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link href="./index.css" rel="stylesheet" />
+    <link href="./room.css" rel="stylesheet" />
+    <!-- <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  </head>
 
-  <!-- <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
-  <link href="./index.css" rel="stylesheet" />
-  <link href="./room.css" rel="stylesheet" />
-  <!-- <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> -->
-</head>
-
-<body>
-  <header class="headFixed">
-    <div class="logo">
-      <img src="./imgs/logo.png" />
-    </div>
-    <nav>
-      <div><a href="./index" class="active">首页</a></div>
-      <div><a href="./aboutus.html">关于我们</a></div>
-      <div><a href="./production.html">产品中心</a></div>
-      <div><a href="./new.html">新闻中心</a></div>
-      <div>
-        <a href="./team-intro">酒店</a>
-        <ul class="dropdown">
-          <a>酒店首页</a>
-          <a>公共区域</a>
-          <a>房间类型</a>
-          <a>新闻资讯</a>
-        </ul>
+  <body>
+    <header class="headFixed">
+      <div class="logo">
+        <img src="./imgs/logo.png" />
       </div>
-      <div>
-        <a href="#company-activities">房地产</a>
-        <ul class="dropdown">
-          <a>房地产首页</a><a>项目案例</a>
-        </ul>
-      </div>
-      <div><a href="./contactus.html">联系我们</a></div>
-      <!-- <a href="#"><i class="fas fa-search"></i></a> -->
-    </nav>
-    <div class="burger" id="burger">
-      <div class="burger-line1"></div>
-      <div class="burger-line2"></div>
-      <div class="burger-line3"></div>
-    </div>
-  </header>
-
-  <div class="swiper pb-2 bg-[#f6f6f6]" id="swiper ">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <picture class="d-block w-100">
-          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide1.jpg" />
-          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide1.jpg" />
-          <img class="" width="100%" src="./imgs/pc/slide1.jpg" alt=" ">
-        </picture>
-        <div class="title ">
-          <p class="text-xl leading-loose">"骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
-            每一位消费者及合作伙伴,做到尽善尽美。</p>
+      <nav>
+        <div><a href="./index" class="active">首页</a></div>
+        <div><a href="./aboutus.html">关于我们</a></div>
+        <div><a href="./production.html">产品中心</a></div>
+        <div><a href="./new.html">新闻中心</a></div>
+        <div>
+          <a href="./team-intro">酒店</a>
+          <ul class="dropdown">
+            <a>酒店首页</a>
+            <a>公共区域</a>
+            <a>房间类型</a>
+            <a>新闻资讯</a>
+          </ul>
         </div>
+        <div>
+          <a href="#company-activities">房地产</a>
+          <ul class="dropdown">
+            <a>房地产首页</a
+            ><a>项目案例</a>
+          </ul>
+        </div>
+        <div><a href="./contactus.html">联系我们</a></div>
+        <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+      </nav>
+      <div class="burger" id="burger">
+        <div class="burger-line1"></div>
+        <div class="burger-line2"></div>
+        <div class="burger-line3"></div>
       </div>
-      <div class="swiper-slide">
-        <picture class="d-block w-100">
-          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide2.jpg" />
-          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide2.jpg" />
-          <img class="" width="100%" src="./imgs/pc/slide2.jpg" alt=" ">
-        </picture>
-        <div class="title ">
-          <p class="text-2xl leading-loose wordspace">是住宿&ensp;/&ensp;也是度假&ensp;/&ensp;更是观光</p>
-          <div class="text-base leading-loose text-center warp">
-            <p>
-              国潮唐风度假酒店&emsp;
-              黄金旅游地段&emsp;
-            </p>
-            <p>
-              休闲度假胜地&emsp;
-              感受非凡的入住体验
+    </header>
+
+    <div class="swiper pb-2 bg-[#f6f6f6]" id="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture class="d-block w-100">
+            <source
+              media="(max-width: 1100px)"
+              srcset="./imgs/mobile/slide1.jpg"
+            />
+            <source media="(min-width: 1100px)" srcset="./imgs/pc/slide1.jpg" />
+            <img class="" width="100%" src="./imgs/pc/slide1.jpg" alt=" " />
+          </picture>
+          <div class="title">
+            <p class="text-xl leading-loose">
+              "骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
+              每一位消费者及合作伙伴,做到尽善尽美。
             </p>
           </div>
-          <p class="text-xl leading-loose"></p>
+        </div>
+        <div class="swiper-slide">
+          <picture class="d-block w-100">
+            <source
+              media="(max-width: 1100px)"
+              srcset="./imgs/mobile/slide2.jpg"
+            />
+            <source media="(min-width: 1100px)" srcset="./imgs/pc/slide2.jpg" />
+            <img class="" width="100%" src="./imgs/pc/slide2.jpg" alt=" " />
+          </picture>
+          <div class="title">
+            <p class="text-2xl leading-loose wordspace">
+              是住宿&ensp;/&ensp;也是度假&ensp;/&ensp;更是观光
+            </p>
+            <div class="text-base leading-loose text-center warp">
+              <p>国潮唐风度假酒店&emsp; 黄金旅游地段&emsp;</p>
+              <p>休闲度假胜地&emsp; 感受非凡的入住体验</p>
+            </div>
+            <p class="text-xl leading-loose"></p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <picture class="d-block w-100">
+            <source
+              media="(max-width: 1100px)"
+              srcset="./imgs/mobile/slide3.jpg"
+            />
+            <source media="(min-width: 1100px)" srcset="./imgs/pc/slide3.jpg" />
+            <img class="" width="100%" src="./imgs/pc/slide3.jpg" alt=" " />
+          </picture>
+          <div class="title">
+            <p class="text-base leading-loose">
+              20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!
+            </p>
+          </div>
         </div>
       </div>
-      <div class="swiper-slide">
-        <picture class="d-block w-100">
-          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide3.jpg" />
-          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide3.jpg" />
-          <img class="" width="100%" src="./imgs/pc/slide3.jpg" alt=" ">
-        </picture>
-        <div class="title ">
-          <p class="text-base leading-loose">
-            20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!</p>
-        </div>
-      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
     </div>
-    <!-- 如果需要分页器 -->
-    <div class="swiper-pagination"></div>
 
-  </div>
-  <div id="production">
-    <div class="box">
-      <p class="text-2xl title text-center ">房间类型<br /><span class="text-2xl">ROOM TYPE</span>
-      </p>
+    <div id="production">
+      <div class="box">
+        <p class="text-2xl title text-center">
+          房间类型<br /><span class="text-2xl">ROOM TYPE</span>
+        </p>
 
-      <div class="swiper mySwiper">
-        <div class="swiper-pagination" style="top: 10px;width: 100%"></div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="flex justify-between bg-white flex-wrap">
-              <div class="item">
-                <picture>
-                  <source media="(max-width: 1100px)" srcset="./imgs/mobile/rooms1.jpg" />
-                  <source media="(min-width: 1100px)" srcset="./imgs/pc/rooms1.jpg" />
-                  <img class="" src="./imgs/pc/rooms1.jpg" alt=" ">
-                </picture>
-                <p>鱼丸</p>
+        <div class="swiper mySwiper">
+          <div class="swiper-pagination" style="top: 10px; width: 100%"></div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide mx-1">
+              <div class="flex justify-between bg-white flex-wrap">
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/big1.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/big1.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/big1.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/big2.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/big2.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/big2.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/big3.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/big3.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/big3.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
               </div>
-              <div class="item">
-                <picture>
-                  <source media="(max-width: 1100px)" srcset="./imgs/mobile/rooms1.jpg" />
-                  <source media="(min-width: 1100px)" srcset="./imgs/pc/rooms1.jpg" />
-                  <img class="" src="./imgs/pc/rooms1.jpg" alt=" ">
-                </picture>
-                <p>虾丸</p>
+            </div>
+            <div class="swiper-slide mx-1">
+              <div class="flex justify-between bg-white flex-wrap">
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/double1.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/double1.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/double1.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/double2.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/double2.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/double2.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/double3.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/double3.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/double3.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/double4.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/double4.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/double4.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/double5.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/double5.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/double5.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/double6.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/double6.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/double6.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
               </div>
-              <div class="item">
-                <picture>
-                  <source media="(max-width: 1100px)" srcset="./imgs/mobile/rooms1.jpg" />
-                  <source media="(min-width: 1100px)" srcset="./imgs/pc/rooms1.jpg" />
-                  <img class="" src="./imgs/pc/rooms1.jpg" alt=" ">
-                </picture>
-                <p>风味牛肉丸</p>
+            </div>
+            <div class="swiper-slide mx-1">
+              <div class="flex justify-between bg-white flex-wrap">
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/kid1.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/kid1.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/kid1.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/kid2.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/kid2.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/kid2.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/kid3.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/kid3.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/kid3.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/kid4.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/kid4.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/kid4.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/kid5.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/kid5.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/kid5.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/kid6.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/kid6.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/kid6.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/kid7.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/kid7.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/kid7.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/kid8.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/kid8.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/kid8.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/kid9.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/kid9.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/kid9.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
               </div>
-              <div class="item">
-                <picture>
-                  <source media="(max-width: 1100px)" srcset="./imgs/mobile/rooms1.jpg" />
-                  <source media="(min-width: 1100px)" srcset="./imgs/pc/rooms1.jpg" />
-                  <img class="" src="./imgs/pc/rooms1.jpg" alt=" ">
-                </picture>
-                <p>撒尿牛肉丸</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <div class="flex justify-between bg-white flex-wrap">
+                  <div class="item">
+                    <picture>
+                      <source
+                        media="(max-width: 1100px)"
+                        srcset="./imgs/mobile/rooms/family1.jpg"
+                      />
+                      <source
+                        media="(min-width: 1100px)"
+                        srcset="./imgs/pc/rooms/family1.jpg"
+                      />
+                      <img
+                        class=""
+                        width="100%"
+                        srcset="./imgs/pc/rooms/family1.jpg"
+                        alt=" "
+                      />
+                    </picture>
+                  </div>
+                  <div class="item">
+                    <picture>
+                      <source
+                        media="(max-width: 1100px)"
+                        srcset="./imgs/mobile/rooms/family2.jpg"
+                      />
+                      <source
+                        media="(min-width: 1100px)"
+                        srcset="./imgs/pc/rooms/family2.jpg"
+                      />
+                      <img
+                        class=""
+                        width="100%"
+                        srcset="./imgs/pc/rooms/family2.jpg"
+                        alt=" "
+                      />
+                    </picture>
+                  </div>
+                  <div class="item">
+                    <picture>
+                      <source
+                        media="(max-width: 1100px)"
+                        srcset="./imgs/mobile/rooms/family3.jpg"
+                      />
+                      <source
+                        media="(min-width: 1100px)"
+                        srcset="./imgs/pc/rooms/family3.jpg"
+                      />
+                      <img
+                        class=""
+                        width="100%"
+                        srcset="./imgs/pc/rooms/family3.jpg"
+                        alt=" "
+                      />
+                    </picture>
+                  </div>
+                    <div class="item">
+                    <picture>
+                      <source
+                        media="(max-width: 1100px)"
+                        srcset="./imgs/mobile/rooms/family4.jpg"
+                      />
+                      <source
+                        media="(min-width: 1100px)"
+                        srcset="./imgs/pc/rooms/family4.jpg"
+                      />
+                      <img
+                        class=""
+                        width="100%"
+                        srcset="./imgs/pc/rooms/family4.jpg"
+                        alt=" "
+                      />
+                    </picture>
+                  </div>
+                </div>
               </div>
-              <div class="item">
-                <picture>
-                  <source media="(max-width: 1100px)" srcset="./imgs/mobile/rooms1.jpg" />
-                  <source media="(min-width: 1100px)" srcset="./imgs/pc/rooms1.jpg" />
-                  <img class="" src="./imgs/pc/rooms1.jpg" alt=" ">
-                </picture>
-                <p>鱼丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>虾丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>风味牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>撒尿牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>鱼丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>虾丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>风味牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>撒尿牛肉丸</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex justify-between bg-white flex-wrap">
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/mahjong1.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/mahjong1.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/mahjong1.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/mahjong2.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/mahjong2.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/mahjong2.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/mahjong3.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/mahjong3.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/mahjong3.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/mahjong4.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/mahjong4.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/mahjong4.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/mahjong5.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/mahjong5.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/mahjong5.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
+                <div class="item">
+                  <picture>
+                    <source
+                      media="(max-width: 1100px)"
+                      srcset="./imgs/mobile/rooms/mahjong6.jpg"
+                    />
+                    <source
+                      media="(min-width: 1100px)"
+                      srcset="./imgs/pc/rooms/mahjong6.jpg"
+                    />
+                    <img
+                      class=""
+                      width="100%"
+                      srcset="./imgs/pc/rooms/mahjong6.jpg"
+                      alt=" "
+                    />
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="flex justify-between bg-white flex-wrap">
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>鱼丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>虾丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>风味牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>撒尿牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>鱼丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>虾丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>风味牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>撒尿牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>鱼丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>虾丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>风味牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>撒尿牛肉丸</p>
-              </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-[#282e31] mt-0">
+      <div class="box flex justify-between">
+        <div class="text-start max-w-[46vw]">
+          <div class="text-xl">联系我们</div>
+          <div class="my-4 flex">
+            客服电话:
+            <div>
+              <p>0576-86882999</p>
+              <p>0576-81857777</p>
             </div>
           </div>
-          <div class="swiper-slide">
-
-          </div>
-          <div class="swiper-slide">
-
-          </div>
-          <div class="swiper-slide">
-
+          <div class="flex">
+            <div>酒店位置:</div>
+            <div class="flex-1">浙江省台州市温岭市石塘镇曙光大道9号</div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="bg-[#282e31] mt-0">
-    <div class="box flex justify-between">
-      <div class="text-start max-w-[46vw]">
-        <div class="text-xl">联系我们</div>
-        <div class="my-4 flex">客服电话:<div>
-            <p>0576-86882999</p>
-            <p>0576-81857777</p>
-          </div>
-        </div>
-        <div class="flex">
-          <div>酒店位置:</div>
-          <div class="flex-1">浙江省台州市温岭市石塘镇曙光大道9号</div>
+        <div>
+          <div>关注我们</div>
+          <div><img src="./imgs/qrcode.png" /></div>
+          <div>微信公众号</div>
         </div>
       </div>
-      <div>
-        <div>关注我们</div>
-        <div><img src="./imgs/qrcode.png" /></div>
-        <div>微信公众号</div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="./index.js"></script>
 
-      </div>
-
-    </div>
-  </footer>
-  <!-- Swiper JS -->
-  <script src="./index.js"></script>
-
-
-  <!-- Initialize Swiper -->
-  <script>
-    const title = [
-      "行政大床",
-      "行政双床",
-      "行政套房",
-      "家庭套房",
-      "棋牌套房",
-    ];
-    var swiper = new Swiper(".mySwiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return (
-            '<span class="' + className + '">' + title[index] + "</span>"
-          );
+    <!-- Initialize Swiper -->
+    <script>
+      const title = [
+        "行政大床",
+        "行政双床",
+        "儿童套房",
+        "家庭套房",
+        "棋牌套房",
+      ];
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return (
+              '<span class="' + className + '">' + title[index] + "</span>"
+            );
+          },
         },
-      },
-    });
-  </script>
-</body>
-
+      });
+    </script>
+  </body>
 </html>
