@@ -2,276 +2,313 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="./index.css" rel="stylesheet" />
-    <link href="./hotel.css" rel="stylesheet" />
-    <script src="./bootstrap/css/tailwind.css"></script>
-    <link rel="stylesheet" href="./swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="./css/index.css" rel="stylesheet" />
+  <link href="./css/new.css" rel="stylesheet" />
+  <link href="./css/hotel.css" rel="stylesheet" />
+  <script src="./css/bootstrap/tailwind.css"></script>
+  <link rel="stylesheet" href="./css/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css">
 
-    <!-- <script src="./swiper/swiper-bundle.min.js.map"> </script> -->
-    <title>Document</title>
+  <!-- <script src="./swiper/swiper-bundle.min.js.map"> </script> -->
+  <title>Document</title>
 </head>
 
 <body>
-     <header class="headFixed">
-      <div class="logo">
-        <img src="./imgs/logo.png" />
-      </div>
-      <nav>
-        <div><a href="./index" class="active">首页</a></div>
-        <div><a href="./aboutus.html">关于我们</a></div>
-        <div><a href="./production.html">产品中心</a></div>
-        <div><a href="./new.html">新闻中心</a></div>
-        <div>
-          <a href="./team-intro">酒店</a>
-          <ul class="dropdown">
-            <a>酒店首页</a>
-            <a>公共区域</a>
-            <a>房间类型</a>
-            <a>新闻资讯</a>
-          </ul>
-        </div>
-        <div>
-          <a href="#company-activities">房地产</a>
-          <ul class="dropdown">
-            <a>房地产首页</a
-            ><a>项目案例</a>
-          </ul>
-        </div>
-        <div><a href="./contactus.html">联系我们</a></div>
-        <!-- <a href="#"><i class="fas fa-search"></i></a> -->
-      </nav>
-      <div class="burger" id="burger">
-        <div class="burger-line1"></div>
-        <div class="burger-line2"></div>
-        <div class="burger-line3"></div>
-      </div>
-    </header>
-
-    <div class="swiper pb-2 bg-[#f6f6f6]" id="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <picture class="d-block w-100">
-            <source
-              media="(max-width: 1100px)"
-              srcset="./imgs/mobile/slide1.jpg"
-            />
-            <source media="(min-width: 1100px)" srcset="./imgs/pc/slide1.jpg" />
-            <img class="" width="100%" src="./imgs/pc/slide1.jpg" alt=" " />
-          </picture>
-          <div class="title">
-            <p class="text-xl leading-loose">
-              "骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
-              每一位消费者及合作伙伴,做到尽善尽美。
-            </p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <picture class="d-block w-100">
-            <source
-              media="(max-width: 1100px)"
-              srcset="./imgs/mobile/slide2.jpg"
-            />
-            <source media="(min-width: 1100px)" srcset="./imgs/pc/slide2.jpg" />
-            <img class="" width="100%" src="./imgs/pc/slide2.jpg" alt=" " />
-          </picture>
-          <div class="title">
-            <p class="text-2xl leading-loose wordspace">
-              是住宿&ensp;/&ensp;也是度假&ensp;/&ensp;更是观光
-            </p>
-            <div class="text-base leading-loose text-center warp">
-              <p>国潮唐风度假酒店&emsp; 黄金旅游地段&emsp;</p>
-              <p>休闲度假胜地&emsp; 感受非凡的入住体验</p>
-            </div>
-            <p class="text-xl leading-loose"></p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <picture class="d-block w-100">
-            <source
-              media="(max-width: 1100px)"
-              srcset="./imgs/mobile/slide3.jpg"
-            />
-            <source media="(min-width: 1100px)" srcset="./imgs/pc/slide3.jpg" />
-            <img class="" width="100%" src="./imgs/pc/slide3.jpg" alt=" " />
-          </picture>
-          <div class="title">
-            <p class="text-base leading-loose">
-              20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- 如果需要分页器 -->
-      <div class="swiper-pagination"></div>
+  <header class="headFixed">
+    <div class="logo">
+      <img src="./imgs/logo.png" />
     </div>
-    <div id="hotel">
-        <div class="box pt-10 ">
-            <div class="flex flex-wrap about">
-                <div class="">
-                    <img src="./imgs/pc/hotelus.png" />
-                </div>
-                <div class=" flex flex-col  aboutus">
-                    <p class="text-2xl text-[#727272] ">ABOUT US</p>
-                    <p class="text-3xl ">关于我们</p>
-                    <p class="my-4 ">
-                        温岭石塘开元名庭酒店立于东海-温岭·石塘曙光大道9号，千年曙之滨--一光碑/金沙滩景区/七彩小岛等距离酒店5公里内，是集餐饮、客房、会议、休闲娱乐为一体的国潮唐风商务度假酒店</p>
-                    <p>酒店拥有各式舒适高端客房124间/套同时为您提供自助餐厅、包厢、多功能厅、健身房、洗衣房等精致设施服务，可承品质高要求的会议、宴会及社交活动。</p>
-                </div>
+    <nav>
+      <div><a href="">首页</a></div>
+      <div><a href="">关于我们</a></div>
+      <div><a href="">产品中心</a></div>
+      <div><a href="">新闻中心</a></div>
+      <div>
+        <a class="active" href="./hotel.html">酒店</a>
+        <ul class="dropdown">
+          <a class="active" href="./hotel.html">酒店首页</a>
+          <a href="./area.html">公共区域</a>
+          <a>房间类型</a>
+          <a>新闻资讯</a>
+        </ul>
+      </div>
+      <div>
+        <a href="#company-activities">房地产</a>
+        <ul class="dropdown">
+          <a>房地产首页</a><a>项目案例</a>
+        </ul>
+      </div>
+      <div><a href="">联系我们</a></div>
+      <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+    </nav>
+    <div class="burger" id="burger">
+      <div class="burger-line1"></div>
+      <div class="burger-line2"></div>
+      <div class="burger-line3"></div>
+    </div>
+  </header>
+
+  <div class="swiper pb-2 bg-[#f6f6f6]" id="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide1.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide1.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide1.jpg" alt=" " />
+        </picture>
+        <div class="title">
+          <p class="text-xl leading-loose">
+            "骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
+            每一位消费者及合作伙伴,做到尽善尽美。
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide2.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide2.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide2.jpg" alt=" " />
+        </picture>
+        <div class="title">
+          <p class="text-2xl leading-loose wordspace">
+            是住宿&ensp;/&ensp;也是度假&ensp;/&ensp;更是观光
+          </p>
+          <div class="text-base leading-loose text-center warp">
+            <p>国潮唐风度假酒店&emsp; 黄金旅游地段&emsp;</p>
+            <p>休闲度假胜地&emsp; 感受非凡的入住体验</p>
+          </div>
+          <p class="text-xl leading-loose"></p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide3.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide3.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide3.jpg" alt=" " />
+        </picture>
+        <div class="title">
+          <p class="text-base leading-loose">
+            20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <div id="hotel">
+    <div class="box pt-10 ">
+      <div class="flex flex-wrap about">
+        <div class="">
+          <img src="./imgs/pc/hotelus.png" />
+        </div>
+        <div class=" flex flex-col  aboutus">
+          <p class="text-2xl text-[#727272] ">ABOUT US</p>
+          <p class="text-3xl ">关于我们</p>
+          <p class="my-4 ">
+            温岭石塘开元名庭酒店立于东海-温岭·石塘曙光大道9号，千年曙之滨--一光碑/金沙滩景区/七彩小岛等距离酒店5公里内，是集餐饮、客房、会议、休闲娱乐为一体的国潮唐风商务度假酒店</p>
+          <p>酒店拥有各式舒适高端客房124间/套同时为您提供自助餐厅、包厢、多功能厅、健身房、洗衣房等精致设施服务，可承品质高要求的会议、宴会及社交活动。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box pt-18 bg-[#f6f6f6]">
+      <p class="text-3xl  text-center">公共区域</p>
+      <p class="text-2xl text-[#727272]  text-center ">PUBLIC AREAS</p>
+      <div class="flex bg-white mt-8">
+        <picture class="d-block w-[60%]">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/1.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/lobby.jpg" />
+          <img src="./imgs/pc/lobby.jpg" />
+        </picture>
+        <div class=" flex flex-col justify-between  w-[40%] area">
+          <p class="text-xl text-[#ee2527]">大堂吧</p>
+          <p>宽敞明亮的大堂吧</p>
+          <div>
+            <div class="btn  hover:bg-[#ee2527] hover:text-white">
+              <a href="./area.html#lobby">查看详情</a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex bg-white mt-12">
+        <div class="flex flex-col justify-between w-[40%] pr-[2%] area">
+          <p class="text-xl text-[#ee2527]">餐饮服务</p>
+          <p class="detailHide">酒店配有100个餐位的自助餐厅及两间私人贵宾包厢，为您提供各类美馔，缤纷多彩的美食全方位诠释时尚轻奢生活。</p>
+          <p class="detailHidePc">自助餐厅及两间私人包厢，提供各类美食</p>
+          <div>
+            <div class="btn  hover:bg-[#ee2527] hover:text-white"><a href="./area.html#ding">查看详情</a></div>
+          </div>
+        </div>
+        <picture class="d-block w-[60%]">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/3.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/ding.jpg" />
+          <img src="./imgs/pc/ding.jpg" />
+        </picture>
+
+      </div>
+      <div class="flex bg-white mt-12">
+        <picture class="d-block w-[60%]">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/2.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/meeting.jpg" />
+          <img src="./imgs/pc/meeting.jpg" />
+        </picture>
+        <div class="flex flex-col justify-between  w-[40%] area">
+          <p class="text-xl text-[#ee2527]">会议会展</p>
+          <p class="detailHide">360m的多功能厅和92m的会议室，满足您的商务和宴请的一切需求。</p>
+          <p class="detailHidePc">多功能厅和会议室，满足商务和宴请的需求。</p>
+          <div>
+            <div class="btn hover:bg-[#ee2527] hover:text-white">
+              <a href="./area.html#meeting">查看详情</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box pt-18 bg-[#f6f6f6]">
+      <p class="text-3xl  text-center">房间风格</p>
+      <p class="text-2xl text-[#727272]  text-center ">ROOM STYLE</p>
+    </div>
+    <div class="flex mb-12 roomtype flex-wrap justify-between">
+      <picture onclick="goRoom('1')">
+        <source media="(max-width: 1100px)" srcset="./imgs/mobile/room1.jpg" />
+        <source media="(min-width: 1100px)" srcset="./imgs/pc/room1.jpg" />
+        <img class="" src="./imgs/pc/room1.jpg" alt=" ">
+      </picture>
+      <picture onclick="goRoom('0')">
+        <source media="(max-width: 1100px)" srcset="./imgs/mobile/room2.jpg" />
+        <source media="(min-width: 1100px)" srcset="./imgs/pc/room2.jpg" />
+        <img class="" src="./imgs/pc/room2.jpg" alt=" ">
+      </picture>
+      <picture onclick="goRoom('4')">
+        <source media="(max-width: 1100px)" srcset="./imgs/mobile/room3.jpg" />
+        <source media="(min-width: 1100px)" srcset="./imgs/pc/room3.jpg" />
+        <img class="" src="./imgs/pc/room3.jpg" alt=" ">
+      </picture>
+      <picture onclick="goRoom('2')">
+        <source media="(max-width: 1100px)" srcset="./imgs/mobile/room4.jpg" />
+        <source media="(min-width: 1100px)" srcset="./imgs/pc/room4.jpg" />
+        <img class="" src="./imgs/pc/room4.jpg" alt=" ">
+      </picture>
+      <picture onclick="goRoom('3')">
+        <source media="(max-width: 1100px)" srcset="./imgs/mobile/room5.jpg" />
+        <source media="(min-width: 1100px)" srcset="./imgs/pc/room5.jpg" />
+        <img class="" src="./imgs/pc/room5.jpg" alt=" ">
+      </picture>
+
+    </div>
+
+    <div class="box pt-18 ">
+      <p class="text-3xl  text-center">酒店资讯</p>
+      <p class="text-2xl text-[#727272]  text-center ">HOTEL INFORMATION</p>
+      <div class="newlist my-2" id="newlist">
+
+        <div class="mt-4 bg-[#f6f6f6]">
+          <a href="https://mp.weixin.qq.com/s/AecvnL7pRELjK_ibj1KtYQ" target="_blank">
+            <div class="flex item flex-wrap ">
+              <img src="./imgs/news/new2024.png" />
+              <div class="titleBox">
+                <p class="text-xl">荣誉时刻|温岭石塘开元名庭酒店荣获“浙江省银桂品质饭店”称号</p>
+                <div class="btn  hover:bg-[#ee2527] hover:text-white">
+                  <a href="https://mp.weixin.qq.com/s/AecvnL7pRELjK_ibj1KtYQ" target="_blank">查看详情</a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="mt-4 bg-[#f6f6f6]">
+          <a href="https://mp.weixin.qq.com/s/ONQwrUGIvp4JvSfcYUXWug" target="_blank">
+            <div class="flex item flex-wrap ">
+              <img src="./imgs/news/news2023.png" />
+              <div class="titleBox">
+                <p class="text-xl">官宣！2023年度携程受欢迎新开业酒店！</p>
+                <div class="btn  hover:bg-[#ee2527] hover:text-white">
+                  <a href="https://mp.weixin.qq.com/s/ONQwrUGIvp4JvSfcYUXWug" target="_blank">查看详情</a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-[#ee2527] text-center mt-4 text-[14px]">
+        <a href="./newhotel.html" target="_blank">查看详情</a>
+      </div>
+    </div>
+
+
+    <div class="relative mt-4">
+      <picture class="d-block w-100">
+        <source media="(max-width: 1100px)" srcset="./imgs/mobile/orderGb.png" />
+        <source media="(min-width: 1100px)" srcset="./imgs/pc/orderGb.png" />
+        <img class="" width="100%" src="./imgs/pc/orderGb.png" alt=" ">
+      </picture>
+      <form class="absolute  top-0  h-full w-full bg-[#0000008f] flex items-end justify-center flex-wrap gap-x-4 py-4">
+        <input type="text" id="name" name="name" placeholder="请输入你的姓名" class="text-xl bg-white rounded-md  p-2 w-80" />
+        <input type="email" id="email" name="email" placeholder="请输入你的电话"
+          class="bg-white p-2 rounded-md w-[240px]  text-xl" />
+        <select value=" " class=" p-2 rounded-md w-[240px]  text-xl" id="message" name="message" placeholder="请选择房型">
+          <option value="">请选择房型</option>
+          <option value="0">行政双床</option>
+          <option value="1">行政大床</option>
+          <option value="2">家庭套房</option>
+          <option value="3">行政套房</option>
+          <option value="4">棋牌房房</option>
+        </select>
+
+        <div class="w-full text-center">
+          <button class="  px-6 py-2 rounded-md  text-white bg-[#AB2125]" type="submit">提交留言</button>
+        </div>
+      </form>
+
+    </div>
+    <footer class="bg-[#282e31] mt-0 text-white">
+      <div class="box flex justify-between">
+        <div class="text-start max-w-[46vw]">
+          <div class="text-xl">联系我们</div>
+          <div class="my-4 flex">客服电话:<div>
+              <p>0576-86882999</p>
+              <p>0576-81857777</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div>酒店位置:</div>
+            <div class="flex-1">浙江省台州市温岭市石塘镇曙光大道9号</div>
+          </div>
+        </div>
+        <div class="text-center">
+          <div>关注我们</div>
+          <div class="my-2"><img src="./imgs/qrcode.png" /></div>
+          <div>微信公众号</div>
+
         </div>
 
-        <div class="box pt-18 bg-[#f6f6f6]">
-            <p class="text-3xl  text-center">公共区域</p>
-            <p class="text-2xl text-[#727272]  text-center ">PUBLIC AREAS</p>
-            <div class="flex bg-white mt-8">
-                <picture class="d-block w-[60%]">
-                    <source media="(max-width: 1100px)" srcset="./imgs/mobile/1.jpg" />
-                    <source media="(min-width: 1100px)" srcset="./imgs/pc/lobby.jpg" />
-                    <img src="./imgs/pc/lobby.jpg" />
-                </picture>
-                <div class=" flex flex-col justify-between  w-[40%] area">
-                    <p class="text-xl text-[#ee2527]">大堂吧</p>
-                    <p>宽敞明亮的大堂吧</p>
-                    <div>
-                        <div class="btn ">查看详情</div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </footer>
 
-            <div class="flex bg-white mt-12">
-                <div class="flex flex-col justify-between w-[40%] pr-[2%] area">
-                    <p class="text-xl text-[#ee2527]">餐饮服务</p>
-                    <p class="detailHide">酒店配有100个餐位的自助餐厅及两间私人贵宾包厢，为您提供各类美馔，缤纷多彩的美食全方位诠释时尚轻奢生活。</p>
-                    <p class="detailHidePc">自助餐厅及两间私人包厢，提供各类美食</p>
-                    <div>
-                        <div class="btn ">查看详情</div>
-                    </div>
-                </div>
-                <picture class="d-block w-[60%]">
-                    <source media="(max-width: 1100px)" srcset="./imgs/mobile/3.jpg" />
-                    <source media="(min-width: 1100px)" srcset="./imgs/pc/ding.jpg" />
-                    <img src="./imgs/pc/ding.jpg" />
-                </picture>
-
-            </div>
-            <div class="flex bg-white mt-12">
-                <picture class="d-block w-[60%]">
-                    <source media="(max-width: 1100px)" srcset="./imgs/mobile/2.jpg" />
-                    <source media="(min-width: 1100px)" srcset="./imgs/pc/meeting.jpg" />
-                    <img src="./imgs/pc/meeting.jpg" />
-                </picture>
-                <div class="flex flex-col justify-between  w-[40%] area">
-                    <p class="text-xl text-[#ee2527]">会议会展</p>
-                    <p class="detailHide">360m的多功能厅和92m的会议室，满足您的商务和宴请的一切需求。</p>
-                    <p class="detailHidePc">多功能厅和会议室，满足商务和宴请的需求。</p>
-                    <div>
-                        <div class="btn ">查看详情</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="box pt-18 bg-[#f6f6f6]">
-            <p class="text-3xl  text-center">房间风格</p>
-            <p class="text-2xl text-[#727272]  text-center ">ROOM STYLE</p>
-        </div>
-        <div class="flex mb-12 roomtype flex-wrap justify-between">
-            <picture>
-                <source media="(max-width: 1100px)" srcset="./imgs/mobile/room1.jpg" />
-                <source media="(min-width: 1100px)" srcset="./imgs/pc/room1.jpg" />
-                <img class=""  src="./imgs/pc/room1.jpg" alt=" ">
-            </picture>
-            <picture>
-                <source media="(max-width: 1100px)" srcset="./imgs/mobile/room2.jpg" />
-                <source media="(min-width: 1100px)" srcset="./imgs/pc/room2.jpg" />
-                <img class=""  src="./imgs/pc/room2.jpg" alt=" ">
-            </picture>
-            <picture>
-                <source media="(max-width: 1100px)" srcset="./imgs/mobile/room3.jpg" />
-                <source media="(min-width: 1100px)" srcset="./imgs/pc/room3.jpg" />
-                <img class=""  src="./imgs/pc/room3.jpg" alt=" ">
-            </picture>
-            <picture>
-                <source media="(max-width: 1100px)" srcset="./imgs/mobile/room4.jpg" />
-                <source media="(min-width: 1100px)" srcset="./imgs/pc/room4.jpg" />
-                <img class=""  src="./imgs/pc/room4.jpg" alt=" ">
-            </picture>
-            <picture>
-                <source media="(max-width: 1100px)" srcset="./imgs/mobile/room5.jpg" />
-                <source media="(min-width: 1100px)" srcset="./imgs/pc/room5.jpg" />
-                <img class=""  src="./imgs/pc/room5.jpg" alt=" ">
-            </picture>
- 
-        </div>
-            <div class="relative">
-                <picture class="d-block w-100">
-                    <source media="(max-width: 1100px)" srcset="./imgs/mobile/orderGb.png" />
-                    <source media="(min-width: 1100px)" srcset="./imgs/pc/orderGb.png" />
-                    <img class="" width="100%" src="./imgs/pc/orderGb.png" alt=" ">
-                </picture>
-                <form
-                    class="absolute  top-0  h-full w-full bg-[#0000008f] flex items-center justify-center flex-wrap gap-x-4 py-4">
-                    <input type="text" id="name" name="name" placeholder="请输入你的姓名"
-                        class="text-xl bg-white rounded-md  p-2 w-80" />
-                    <input type="email" id="email" name="email" placeholder="请输入你的电话"
-                        class="bg-white p-2 rounded-md w-[240px]  text-xl" />
-                    <select class=" p-2 rounded-md w-[240px]  text-xl" id="message" name="message"
-                        placeholder="请输入留言内容">
-                        <option>棋牌</option>
-                        <option>山景</option>
-                    </select>
-
-                    <div class="w-full text-center">
-                        <button class="  px-6 py-2 rounded-md  text-white bg-[#AB2125]" type="submit">提交留言</button>
-                    </div>
-                </form>
-                <!-- <div class="absolute top-0  w-full h-full bg-[#0000008f] flex items-center flex-wrap justify-between">
-             
-            </div> -->
-            </div>
-            <footer class="bg-[#282e31] mt-0 text-white">
-                <div class="box flex justify-between">
-                    <div class="text-start max-w-[46vw]">
-                        <div class="text-xl">联系我们</div>
-                        <div class="my-4 flex">客服电话:<div>
-                                <p>0576-86882999</p>
-                                <p>0576-81857777</p>
-                            </div>
-                        </div>
-                        <div class="flex">
-                            <div>酒店位置:</div>
-                            <div class="flex-1">浙江省台州市温岭市石塘镇曙光大道9号</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>关注我们</div>
-                        <div><img src="./imgs/qrcode.png" /></div>
-                        <div>微信公众号</div>
-
-                    </div>
-
-                </div>
-            </footer>
- 
-        <script src="./index.js"></script>
-        <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="./swiper/swiper-bundle.js"> </script>
-        <script src="./swiper/swiper-bundle.min.js"> </script>
-        <script>
-            var mySwiper = new Swiper('.swiper', {
-                loop: true,
-                autoplay: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                    renderBullet: function (index, className) {
-                        let texts = ['骏马食品工厂', '骏马房地产', '骏马酒店']
-                        let texten = ['Junma Real Estate', 'Junma Food Factory', 'Junma Hotel']
-                        return `
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.js"> </script>
+    <script src="./js/swiper-bundle.min.js"> </script>
+    <script>
+      function goRoom(type) {
+        window.location = './room.html?type=' + type
+      }
+      var mySwiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          renderBullet: function (index, className) {
+            let texts = ['骏马食品工厂', '骏马房地产', '骏马酒店']
+            let texten = ['Junma Real Estate', 'Junma Food Factory', 'Junma Hotel']
+            return `
                     <div  class="${className} swiperItem">
                         <div class='bullet'></div>
                         <div class="swiper-pagination-text">
@@ -280,10 +317,10 @@
                                 </div>
                     </div>
                     `;
-                    },
-                },
-            })
-        </script>
+          },
+        },
+      })
+    </script>
 </body>
 
 </html>

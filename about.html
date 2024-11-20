@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css">
+
+  <script src="./css/bootstrap/tailwind.css"></script>
+
+  <link href="./css/index.css" rel="stylesheet" />
+  <link href="./css/aboutus.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="headFixed">
+    <div class="logo">
+      <img src="./imgs/logo.png" />
+    </div>
+    <nav>
+      <div><a href="./index" class="active">首页</a></div>
+      <div><a href="./aboutus.html">关于我们</a></div>
+      <div><a href="./production.html">产品中心</a></div>
+      <div><a href="./new.html">新闻中心</a></div>
+      <div>
+        <a href="./team-intro">酒店</a>
+        <ul class="dropdown">
+          <a>酒店首页</a>
+          <a>公共区域</a>
+          <a>房间类型</a>
+          <a>新闻资讯</a>
+        </ul>
+      </div>
+      <div>
+        <a href="#company-activities">房地产</a>
+        <ul class="dropdown">
+          <a>房地产首页</a><a>项目案例</a>
+        </ul>
+      </div>
+      <div><a href="./contactus.html">联系我们</a></div>
+      <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+    </nav>
+    <div class="burger" id="burger">
+      <div class="burger-line1"></div>
+      <div class="burger-line2"></div>
+      <div class="burger-line3"></div>
+    </div>
+  </header>
+
+  <div class="swiper pb-2 bg-[#F0f0f0]" id="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide1.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide1.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide1.jpg" alt=" ">
+        </picture>
+        <div class="title ">
+          <p class="text-xl leading-loose">"骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
+            每一位消费者及合作伙伴,做到尽善尽美。</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide2.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide2.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide2.jpg" alt=" ">
+        </picture>
+        <div class="title ">
+          <p class="text-2xl leading-loose wordspace">是住宿&ensp;/&ensp;也是度假&ensp;/&ensp;更是观光</p>
+          <div class="text-base leading-loose text-center warp">
+            <p>
+              国潮唐风度假酒店&emsp;
+              黄金旅游地段&emsp;
+            </p>
+            <p>
+              休闲度假胜地&emsp;
+              感受非凡的入住体验
+            </p>
+          </div>
+          <p class="text-xl leading-loose"></p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide3.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide3.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide3.jpg" alt=" ">
+        </picture>
+        <div class="title ">
+          <p class="text-base leading-loose">
+            20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!</p>
+        </div>
+      </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+  </div>
+  <div class="box pt-18" style="background-color: #f6f6f6">
+    <div class="row">
+      <div class="col-lg-6 col-xs-12">
+        <img src="./imgs/video.png" />
+      </div>
+      <div class="col-lg-6 col-xs-12 flex flex-col justify-between">
+        <div>
+          <p class="text-2xl title">
+            关于我们&nbsp;/&nbsp;<span class="text-2xl">ABOUT US</span>
+          </p>
+          <div class="flex bg justify-between">
+            <div class="w-[48%] py-4 px-4 inline-block ">
+              <div class="flex items-center">
+                <img src="./icon/year.svg" class="w-8 mr-2" />
+                <p class="text-2xl text-lime-700 mb-1">始于1998年</p>
+              </div>
+
+              <p>创建于1998年,</p>
+              <p>前身是温岭市骏马食品有限公司。</p>
+            </div>
+            <div class="w-[48%] py-4 px-4 inline-block ">
+              <div class="flex items-center">
+                <img src="./icon/foodaddress.svg" class="w-10" />
+                <p class="text-2xl text-lime-700 mb-1">中国·石塘</p>
+              </div>
+              <p>2000年第一缕曙光照射地,东方好望角。</p>
+              <p class="text-end">—— (习近平)</p>
+            </div>
+          </div>
+          <p class="my-4">
+            浙江骏马食品有限公司成立于1998年9月,地址为浙江省台州市温岭市石塘镇启明路16号,总占地面积
+            60亩。公司主要从事
+            从事速冻火锅制品(以速冻鱼糜制品、速冻肉制品为主)、速冻菜肴制品(以西餐
+            肉制品为主)以及黄鱼带鱼水产品的研发、生产和销售。以其独特的口味、新颖的包装、过硬的质量已
+            成为浙江休闲食品行业中的排头兵,已在全国多个省市建立销售网络,为广大新老顾客所喜爱。
+          </p>
+        </div>
+        <div>
+          <button class="btn">查看详情</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="aboutus">
+    <div class="relative justify-center items-center flex">
+      <picture class="d-block w-100">
+        <source media="(max-width: 1100px)" srcset="./imgs/mobile/bg1.jpg" />
+        <source media="(min-width: 1100px)" srcset="./imgs/pc/bg1.jpg" />
+        <img class="" width="100%" src="./imgs/pc/bg1.jpg" alt=" " />
+      </picture>
+      <div class="absolute box flex justify-between w-100 text-[#0D7825] idea flex-wrap">
+        <div class="bg-[#ffffffaf] p-4 text-center">
+          <div class="text-2xl">企业理念</div>
+          <div>
+            <div class="border-solid border-[#0D7825] w-[30px] border-1 m-auto my-2"></div>
+          </div>
+          <div class="text-xl">美味源于真诚</div>
+        </div>
+        <div class="bg-[#ffffffaf] p-4 text-center">
+          <div class="text-2xl">企业愿景</div>
+          <div>
+            <div class="border-solid border-[#0D7825] w-[30px] border-1 m-auto my-2"></div>
+          </div>
+          <div class="text-xl">打造中国鱼类食品最佳品牌</div>
+        </div>
+        <div class="bg-[#ffffffaf] p-4 text-center">
+          <div class="text-2xl">企业价值观</div>
+          <div>
+            <div class="border-solid border-[#0D7825] w-[30px] border-1 m-auto my-2"></div>
+          </div>
+          <div class="text-xl">料真心诚,成就美好味道</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="box flex factory flex-wrap justify-between">
+      <div class="bg-[#f0f0f0]">
+        <img src="./imgs/about/about1.png" />
+        <div class="m-4">
+          <p class="text-2xl my-2 text-[#0D7825] text-center">
+            骏马食品 新厂航拍
+          </p>
+          <p>
+            经过20多年的发展,现已成为一家集"食品研发/深加工/销售
+            管理/"于一体的现代化生产型企业。
+          </p>
+          <p>
+            2020年8月,骏马新工厂已落成投入生产,总占地面积60亩, 总投资达5个亿。
+          </p>
+        </div>
+      </div>
+      <div class="bg-[#f0f0f0]">
+        <div class="flex flex-wrap justify-between">
+          <img class="w-[30%]" src="./imgs/about/about2.png" />
+          <img class="w-[30%]" src="./imgs/about/about3.png" />
+          <img class="w-[30%]" src="./imgs/about/about4.png" />
+          <img class="w-[30%]" src="./imgs/about/about5.png" />
+          <img class="w-[30%]" src="./imgs/about/about6.png" />
+          <img class="w-[30%]" src="./imgs/about/about7.png" />
+        </div>
+        <div class="m-4">
+          <p class="text-2xl my-2 text-[#0D7825] text-center">车间规模</p>
+          <p>
+            公司拥有一支国际化标准研发团队,并不断引进德国、日本、台湾等先进机械设备,工厂新设
+            备完全实现自动化,日产量可达600吨。在完善经典产品的同时,积极不懈地推出独树一帜的创
+            新产品。
+          </p>
+          <p>
+            公司拥有目前最先进的生产及流水线设备。车间内部可实现全覆盖自动臭氧消毒杀菌。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <p class="text-2xl title text-center mb-4">
+        企业优势&nbsp;/&nbsp;<span class="text-2xl">ENTERPRISE ADVANTAGES</span>
+      </p>
+      <div class="swiper mySwiperitem">
+        <div class="swiper-pagination mySwiperitempagination" style="top: 10px; width: 100%"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div style="text-align: left">
+              <div class="flex gap-y-2 mb-4 resoure justify-between flex-wrap">
+                <picture>
+                  <source media="(max-width: 1100px)" srcset="./imgs/mobile/about/resour1.png" />
+                  <source media="(min-width: 1100px)" srcset="./imgs/about/resour1.png" />
+                  <img src="./imgs/about/resour1.png" />
+                </picture>
+                <picture>
+                  <source media="(max-width: 1100px)" srcset="./imgs/mobile/about/resour2.png" />
+                  <source media="(min-width: 1100px)" srcset="./imgs/about/resour2.png" />
+                  <img src="./imgs/about/resour2.png" />
+                </picture>
+                <div class="flex justify-between">
+                  <img src="./imgs/about/resour4.png" class="mb-[8px]" />
+                  <img src="./imgs/about/resour3.png" />
+                </div>
+              </div>
+              <p class="flex items-center text-[#0d7a22] text-xl">
+                <img src="./icon/foodaddress.svg" class="w-8 mr-2" style="width: 30px;" />
+                中国·吉祥石塘 渔业巨轮/ 东海鱼仓/蓝色港湾
+              </p>
+              <p>
+                公司位于新千年第一缕曙光首照地--石塘，素有“东方鱼糜生产基地”
+                “中国鱼虾之乡”“中国捕捞大镇”等称号。
+              </p>
+              <p>
+                拥有捕捞大型渔船2000余艘，年优质水产捕捞量达50多万吨，据统计，全国70%海水鱼糜都从石塘发往各地，是名副其实的“蓝色粮仓”。
+              </p>
+              <p>
+                拥有捕捞大型渔船2000余艘，年优质水产捕捞量达50多万吨，据统计，全国70%海水鱼糜都从石塘发往各地，是名副其实的“蓝色粮仓”。
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div style="text-align: left">
+              <div class="flex honor flex-wrap justify-between gap-y-2">
+                <img src="./imgs/about/honor1.png" />
+                <img src="./imgs/about/honor2.png" />
+                <img src="./imgs/about/honor3.png" />
+                <img src="./imgs/about/honor4.png" />
+                <img src="./imgs/about/honor5.png" />
+                <img src="./imgs/about/honor6.png" />
+                <img src="./imgs/about/honor7.png" />
+                <img src="./imgs/about/honor8.png" />
+                <img src="./imgs/about/honor9.png" />
+                <img src="./imgs/about/honor10.png" />
+                <img src="./imgs/about/honor11.png" />
+                <img src="./imgs/about/honor12.png" />
+              </div>
+              <p class="flex items-center text-[#0d7a22] text-xl  mt-2">
+                <img src="./icon/foodaddress.svg" class="w-8 mr-2" style="width: 30px;" />
+
+                资质荣誉
+              </p>
+              <p>
+                20多年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。
+              </p>
+              <p>骏马集团”飞奔向前，共创未来，给您最好服务!</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div style="text-align: left">
+              <div class="flex adv flex-wrap gap-y-2">
+                <img src="./imgs/about/about-adv-1.png" />
+                <img src="./imgs/about/about-adv-2.png" />
+                <img src="./imgs/about/about-adv-3.png" />
+                <img src="./imgs/about/about-adv-4.png" />
+              </div>
+              <p class="flex items-center text-[#0d7a22] text-xl mt-2">
+                <img src="./icon/foodaddress.svg" class="w-8 mr-2" style="width: 30px;" />
+
+                以匠心·守初心
+              </p>
+              <p>
+                公司拥有一支国际化标准研发团队，在完善经典产品的同时，积极不地推出独树一帜的创新产品。
+              </p>
+              <p>
+                骏2022年4月，公司与台州科技职业技术学院达成友好合作协议，将为公司人才储备及产品研发的科学性提供强大的支持。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="mt-8 py-4  text-white bg-[#8aa089]">
+    <div class="box">
+      <div class="flex justify-between flex-wrap">
+        <div class="contact-us text-start w-[48%]">
+          <p class="menu-title">联系我们&nbsp; / &nbsp;CONTACTUS</p>
+          <p>品尝热线:0576-86726001 0576-86726002</p>
+          <p class="my-2">传真:0576-86726003</p>
+          <p>地址:浙江省台州市温岭市石塘镇启明路16号</p>
+        </div>
+
+
+        <div class="service-menu footer-menu w-[50%]">
+          <p class="menu-title">在线留言&nbsp;/&nbsp;MESSAGE</p>
+
+          <form>
+            <input type="text" id="name" name="name" placeholder="请输入你的姓名" class=" my-2 p-2 rounded-md w-[80%]" />
+            <input type="email" id="email" name="email" placeholder="请输入你的电话" class=" my-2 p-2 rounded-md w-[80%]" />
+            <textarea class=" my-2 p-2 rounded-md w-[80%]" id="message" name="message" placeholder="请输入留言内容"></textarea>
+            <div>
+              <button class=" my-2 px-6 py-2 rounded-md t text-white bg-[#AB2125]" type="submit">提交留言</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- <p class="icp-info">湘ICP备19026630号-1</p> -->
+      <!-- <p class="rights">&copy; 2020 云留月科技有限公司</p> -->
+      <!-- <div class="scroll-to-top">
+                <a href="#"><i class="fas fa-chevron-up"></i></a>
+            </div> -->
+    </div>
+  </footer>
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/swiper-bundle.js"> </script>
+  <script src="./js/swiper-bundle.min.js"> </script>
+  <script>
+    var mySwiper = new Swiper("#swiper", {
+      loop: true,
+      autoplay: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          let texts = ["骏马食品工厂", "骏马房地产", "骏马酒店"];
+          let texten = [
+            "Junma Real Estate",
+            "Junma Food Factory",
+            "Junma Hotel",
+          ];
+          return `
+                    <div  class="${className} swiperItem">
+                        <div class='bullet'></div>
+                        <div class="swiper-pagination-text">
+                            <p class='text-2xl'>${texts[index]}<p>
+                            <p>${texten[index]}<p>
+                                </div>
+                    </div>
+                    `;
+        },
+      },
+    });
+    var swiper1 = new Swiper(".mySwiperitem", {
+      pagination: {
+        el: ".mySwiperitempagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          const title = ["资源优势", "行业地位", "研发优势"];
+          return (
+            '<span class="' + className + '">' + title[index] + "</span>"
+          );
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
