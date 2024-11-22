@@ -1,0 +1,13 @@
+#realEstate {
+  @media (min-width: 1101px) {
+    .about {
+      width: 50%;
+      margin-left: 40%;
+    }
+  }
+  @media (max-width: 1100px) {
+    .about {
+      padding: 0px 14%;
+    }
+  }
+}

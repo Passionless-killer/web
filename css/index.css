@@ -193,15 +193,16 @@ header.sticky nav i {
   .headFixed {
     background-color: #ffffff9f;
     position: fixed;
+    top: 0;
     z-index: 9;
-    width: 100vw;
+    width: 100%;
   }
 
   .headsticky {
     background-color: #fff;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 9;
   }
 
   .swiper {

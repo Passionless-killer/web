@@ -2,20 +2,30 @@ const headerEl = document.querySelector("header");
 document.getElementById("burger").addEventListener("click", () => {
   headerEl.classList.toggle("open");
 });
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      console.log(111)
-      headerEl.classList.add("headFixed");
-      headerEl.classList.remove("headsticky");
-    } else {
-      console.log(222)
-      headerEl.classList.remove("headFixed");
-      headerEl.classList.add("headsticky");
-    }
-  });
-});
+let timeout;
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (timeout) clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        requestAnimationFrame(() => {
+          if (entry.isIntersecting) {
+            console.log(111);
+            headerEl.classList.add("headFixed");
+            headerEl.classList.remove("headsticky");
+          } else {
+            console.log(222);
+            headerEl.classList.remove("headFixed");
+            headerEl.classList.add("headsticky");
+          }
+        });
+      }, 800); // 200ms 防抖
+    });
+  },
+  {
+    rootMargin: "0px 0px -300px 0px",
+  }
+);
 observer.observe(document.getElementById("swiper"));
 
 // const headerEl = document.querySelector("header");

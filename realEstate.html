@@ -11,28 +11,119 @@
   <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css">
   <script src="./css/bootstrap/tailwind.css"></script>
   <link href="./css/index.css" rel="stylesheet" />
+  <link href="./css/realEstate.css" rel="stylesheet" />
 
 </head>
 
-<body class="bg-white">
+<body class="bg-white " id="realEstate">
 
-  <img src="./imgs/real.png">
+  <header class="headFixed">
+    <div class="logo">
+      <img src="./imgs/logo.png" />
+    </div>
+    <nav>
+      <div><a href="./index" class="active">首页</a></div>
+      <div><a href="./aboutus.html">关于我们</a></div>
+      <div><a href="./production.html">产品中心</a></div>
+      <div><a href="./new.html">新闻中心</a></div>
+      <div>
+        <a href="./team-intro">酒店</a>
+        <ul class="dropdown">
+          <a>酒店首页</a>
+          <a>公共区域</a>
+          <a>房间类型</a>
+          <a>新闻资讯</a>
+        </ul>
+      </div>
+      <div>
+        <a href="#company-activities">房地产</a>
+        <ul class="dropdown">
+          <a>房地产首页</a><a>项目案例</a>
+        </ul>
+      </div>
+      <div><a href="./contactus.html">联系我们</a></div>
+      <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+    </nav>
+    <div class="burger" id="burger">
+      <div class="burger-line1"></div>
+      <div class="burger-line2"></div>
+      <div class="burger-line3"></div>
+    </div>
+  </header>
+
+  <div class="swiper pb-2 bg-white" id="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide1.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide1.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide1.jpg" alt=" ">
+        </picture>
+        <div class="title ">
+          <p class="text-xl leading-loose">"骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
+            每一位消费者及合作伙伴,做到尽善尽美。</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide2.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide2.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide2.jpg" alt=" ">
+        </picture>
+        <div class="title ">
+          <p class="text-2xl leading-loose wordspace">是住宿&ensp;/&ensp;也是度假&ensp;/&ensp;更是观光</p>
+          <div class="text-base leading-loose text-center warp">
+            <p>
+              国潮唐风度假酒店&emsp;
+              黄金旅游地段&emsp;
+            </p>
+            <p>
+              休闲度假胜地&emsp;
+              感受非凡的入住体验
+            </p>
+          </div>
+          <p class="text-xl leading-loose"></p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide3.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide3.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide3.jpg" alt=" ">
+        </picture>
+        <div class="title ">
+          <p class="text-base leading-loose">
+            20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!</p>
+        </div>
+      </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+  </div>
+
+  <div class=" my-12 about">
+    <p class="text-2xl title">关于我们&nbsp;/&nbsp;<span class="text-2xl  text-[#727272]">ABOUT US</span></p>
+    <div class="my-4">20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!
+    </div>
+  </div>
+  <img src="./imgs/real.png" class="my-12">
   <div class="flex">
-    <img src="./imgs/real1.jpg" class="w-[11.11%] " />
-    <img src="./imgs/real1.jpg" class="w-[11.11%]" />
-    <img src="./imgs/real1.jpg" class="w-[11.11%]" />
-    <img src="./imgs/real1.jpg" class="w-[11.11%]" />
-    <img src="./imgs/real1.jpg" class="w-[11.11%]" />
-    <img src="./imgs/real1.jpg" class="w-[11.11%]" />
-    <img src="./imgs/real1.jpg" class="w-[11.11%]" />
-    <img src="./imgs/real1.jpg" class="w-[11.11%]" />
-    <img src="./imgs/real1.jpg" class="w-[11.11%]" />
+    <img src="./imgs/case/example1.jpg" class="w-[11.11%] " />
+    <img src="./imgs/case/example2.jpg" class="w-[11.11%]" />
+    <img src="./imgs/case/example3.jpg" class="w-[11.11%]" />
+    <img src="./imgs/case/example4.jpg" class="w-[11.11%]" />
+    <img src="./imgs/case/example5.jpg" class="w-[11.11%]" />
+    <img src="./imgs/case/example6.jpg" class="w-[11.11%]" />
+    <img src="./imgs/case/example7.jpg" class="w-[11.11%]" />
+    <img src="./imgs/case/example8.jpg" class="w-[11.11%]" />
+    <img src="./imgs/case/example9.jpg" class="w-[11.11%]" />
   </div>
   <div class="box pt-18">
     <p class="text-3xl  text-center">经典案例</p>
     <p class="text-2xl text-[#727272]  text-center ">CLASSIC CASES</p>
   </div>
-  <div class="w-[90%] m-auto flex flex-wrap justify-between classic">
+  <div class="w-[90%] m-auto gap-y-[2vw] flex flex-wrap justify-between classic">
     <div>
       <img src="./imgs/case/case6.jpg" />
       <div class="text-2xl underline underline-offset-4 my-4">栖江悦</div>
@@ -59,33 +150,69 @@
       </div>
     </div>
   </div>
-  <div style="border:1px solid red " class="mt-20">
-    <video autoplay loop poster preload="auto" width="1000px" height="auto">
+  <div  class="my-20">
+    <video autoplay loop poster preload="auto" width="100%" height="100px">
       <source src="./imgs/hotel.mp4" type="video/mp4" />
-
     </video>
-
   </div>
-  <div onclick="sendEmail()">测试测试</div>
+  <footer style="background-color: #212622; color:#fff">
+    <div class="box py-8">
+      <div class="flex justify-between flex-wrap">
+        <div class="contact-us">
+          <p class="menu-title">联系我们&nbsp;/&nbsp;CONTACTUS</p>
+          <p>品尝热线:0576-86726001 0576-86726002</p>
+          <p>传真:0576-86726003</p>
+          <p>地址:浙江省台州市温岭市石塘镇启明路16号</p>
+        </div>
 
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+        <div class="service-menu footer-menu">
+          <p class="menu-title">帮助与支持</p>
+          <form>
+            <input type="text" id="name" name="name" placeholder="请输入你的姓名" class="block my-6 p-2 rounded-md w-80" />
+            <input type="email" id="email" name="email" placeholder="请输入你的电话" class="block my-6 p-2 rounded-md w-80" />
+            <textarea class="block my-4 p-2 rounded-md w-80" id="message" name="message"
+              placeholder="请输入留言内容"></textarea>
+            <button class="block my-4 px-6 py-2 rounded-md float-right text-white bg-[#AB2125]"
+              type="submit">提交留言</button>
+          </form>
+        </div>
+      </div>
+      <p class="icp-info">湘ICP备19026630号-1</p>
+      <!-- <p class="rights">&copy; 2020 云留月科技有限公司</p> -->
+      <div class="scroll-to-top">
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/swiper-bundle.js"> </script>
+  <script src="./js/swiper-bundle.min.js"> </script>
   <script>
-    (function () {
-      emailjs.init("vRcSkQkxMFs1aPIFN");
-    })();
 
-    function sendEmail() {
-      emailjs.send("vRcSkQkxMFs1aPIFN", "vRcSkQkxMFs1aPIFN", {
-        to_name: "1355433051@qq.com",
-        from_name: "骏马",
-        message: "邮件正文"
-      })
-        .then(function (response) {
-          console.log("邮件发送成功！", response.status, response.text);
-        }, function (error) {
-          console.log("邮件发送失败...", error);
-        });
-    }
+    var mySwiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          let texts = ['骏马食品工厂', '骏马房地产', '骏马酒店']
+          let texten = ['Junma Real Estate', 'Junma Food Factory', 'Junma Hotel']
+          return `
+                  <div  class="${className} swiperItem">
+                      <div class='bullet'></div>
+                      <div class="swiper-pagination-text">
+                          <p class='text-2xl'>${texts[index]}<p>
+                          <p>${texten[index]}<p>
+                              </div>
+                  </div>
+                  `;
+        },
+      },
+    })
   </script>
 </body>
 
