@@ -1,108 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
     <!-- Link Swiper's CSS -->
     <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css" />
 
     <script src="./css/bootstrap/tailwind.css"></script>
 
     <link href="./css/index.css" rel="stylesheet" />
     <link href="./css/case.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body>
-    <div class="box pt-18  bg-white " id="case">
-        <p class="text-3xl  text-center">项目中心</p>
-        <p class="text-2xl text-[#727272]  text-center ">
-            PROJECT CENTER</p>
-        <div class="item flex bg-[#f6f6f6] mt-4 flex-wrap">
-            <img src="./imgs/case/case1.png" />
-            <div class="content">
-                <div class="text-2xl underline underline-offset-4 ">水悦华庭</div>
-                <div>
-                    项目位于文昌路南延、东河路南延、两城路南延三纵，与幸福路东延、泽国大道、104复线三横，共同衔接甬台温铁路.用地面积25331.70㎡，总建筑面积60511㎡，地上建筑面积39585㎡，地下建筑面积20926㎡。
-                </div>
-            </div>
+  <body>
+    <header class="headFixed">
+      <div class="logo">
+        <img src="./imgs/logo.png" />
+      </div>
+      <nav>
+        <div><a href="./index.html" target="_blank">首页</a></div>
+        <div><a href="./about.html" target="_blank">关于我们</a></div>
+        <div><a href="./production.html" target="_blank">产品中心</a></div>
+        <div><a href="./new.html" target="_blank">新闻中心</a></div>
+        <div>
+          <a href="./hotel.html" target="_blank">酒店</a>
+          <ul class="dropdown">
+            <a href="./hotel.html" target="_blank">酒店首页</a>
+            <a href="./area.html" target="_blank">公共区域</a>
+            <a href="./room.html" target="_blank">房间类型</a>
+            <a href="./newhotel.html" target="_blank">酒店资讯</a>
+            <a href="./contacthotel.html" target="_blank">联系我们</a>
+          </ul>
         </div>
-        <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap">
-            <div class="content">
-                <div class="text-2xl underline underline-offset-4 ">金悦府</div>
-                <div>
-                    金悦府的北边位于温岭的主城区，南边为城南的新中心（也就是城南新区），位于城南新区的核心位置，处于鸣鹤路和S226省道的交汇处。占地总面积约64.34亩（42893平方米），由A、B两个区块组成，是城南目前唯一的商业综合体项目。
-                    A区块就是本项目的商业中心，建筑面积约为2万方的商业，由4幢4层裙房组成。B区为住宅区域，住宅总面积约为7.3万方，共计592户；住宅区域规划了18幢3层联排别墅产品，以及4幢27层、2幢25层的高层产品，共计592户。总建筑面积137533㎡，地上建筑面积94533㎡，地下建筑面积43000㎡。
-                </div>
-            </div>
-            <img src="./imgs/case/case2.jpeg" />
+        <div>
+          <a href="./realEstate.html" target="_blank" class="active">房地产</a>
+          <ul class="dropdown">
+            <a href="./realEstate.html" target="_blank">房地产首页</a
+            ><a href="./case.html" target="_blank" class="active">项目案例</a>
+          </ul>
+        </div>
+        <div><a href="./contact.html" target="_blank">联系我们</a></div>
+        <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+      </nav>
+      <div class="burger" id="burger">
+        <div class="burger-line1"></div>
+        <div class="burger-line2"></div>
+        <div class="burger-line3"></div>
+      </div>
+    </header>
 
+    <div class="swiper pb-2 bg-white" id="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture class="d-block w-100">
+            <source
+              media="(max-width: 1100px)"
+              srcset="./imgs/mobile/slide1.jpg"
+            />
+            <source media="(min-width: 1100px)" srcset="./imgs/pc/slide1.jpg" />
+            <img class="" width="100%" src="./imgs/pc/slide1.jpg" alt=" " />
+          </picture>
+          <div class="title">
+            <p class="text-xl leading-loose">
+              "骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
+              每一位消费者及合作伙伴,做到尽善尽美。
+            </p>
+          </div>
         </div>
-        <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap">
-            <img src="./imgs/case/case3.png" />
-            <div class="content">
-                <div class="text-2xl underline underline-offset-4 ">尚悦嘉园</div>
-                <div>
-                    项目位于温岭松门镇育英东路北侧、义政路以南，位置毗邻老虎山.出让面积 32539 平（48.809 亩）总建筑面积92038.10㎡，地上建筑面积65188.60㎡，地下建筑面积26849.50㎡。
-                </div>
+        <div class="swiper-slide">
+          <picture class="d-block w-100">
+            <source
+              media="(max-width: 1100px)"
+              srcset="./imgs/mobile/slide2.jpg"
+            />
+            <source media="(min-width: 1100px)" srcset="./imgs/pc/slide2.jpg" />
+            <img class="" width="100%" src="./imgs/pc/slide2.jpg" alt=" " />
+          </picture>
+          <div class="title">
+            <p class="text-2xl leading-loose wordspace">
+              是住宿&ensp;/&ensp;也是度假&ensp;/&ensp;更是观光
+            </p>
+            <div class="text-base leading-loose text-center warp">
+              <p>国潮唐风度假酒店&emsp; 黄金旅游地段&emsp;</p>
+              <p>休闲度假胜地&emsp; 感受非凡的入住体验</p>
             </div>
+            <p class="text-xl leading-loose"></p>
+          </div>
         </div>
-        <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap">
-            <div class="content">
-                <div class="text-2xl underline underline-offset-4 ">悦湖湾</div>
-                <div>项目位于温岭市松门镇，总建筑面积71007.8㎡，项目占地面积24084平方米，地上建筑面积54224.8平方米，地下建筑面积16783平方米。
-                </div>
-            </div>
-            <img src="./imgs/case/case4.jpg" />
-
+        <div class="swiper-slide">
+          <picture class="d-block w-100">
+            <source
+              media="(max-width: 1100px)"
+              srcset="./imgs/mobile/slide3.jpg"
+            />
+            <source media="(min-width: 1100px)" srcset="./imgs/pc/slide3.jpg" />
+            <img class="" width="100%" src="./imgs/pc/slide3.jpg" alt=" " />
+          </picture>
+          <div class="title">
+            <p class="text-base leading-loose">
+              20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!
+            </p>
+          </div>
         </div>
-        <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap">
-            <img src="./imgs/case/case5.jpg" />
-            <div class="content">
-                <div class="text-2xl underline underline-offset-4 ">悦江湾名苑</div>
-                <div>
-                    位于温岭市新河镇横板桥村，东至锦绣路，南至规划路，西至规划路，北至富裕路。用地面积49695㎡，总建筑面积136721.8㎡，地上总建筑面积99791.8㎡，高层住宅62286.4㎡，低层住宅12402㎡，回购住宅18380㎡，商业5002.54㎡，回购商业3300.24㎡，物业用房419.66㎡，配套用房1319.06㎡，地下建筑面积36930.0㎡，共计699套。
-                </div>
-            </div>
-        </div>
-        <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap">
-            <div class="content">
-                <div class="text-2xl underline underline-offset-4 ">栖江悦</div>
-                <div>位于温岭市新河镇，总建筑面积58505.06㎡，项目占地面积19590平方米，地上建筑面积43298.37平方米，地下建筑面积15206.69平方米。 </div>
-            </div>
-            <img src="./imgs/case/case6.jpg" />
-
-        </div>
-        <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap">
-            <img src="./imgs/case/case7.jpg" />
-            <div class="content">
-                <div class="text-2xl underline underline-offset-4 ">玖隆印象名苑</div>
-                <div>位于城东街道，总建筑面积30478.52㎡，项目占地面积11905平方米，地上建筑面积2619平方米，地下建筑面积7859.52平方米。 </div>
-            </div>
-        </div>
-        <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap">
-            <div class="content">
-                <div class="text-2xl underline underline-offset-4 ">禧悦雅苑</div>
-                <div>
-                    项目用地面积48331㎡，总建筑面积124454.74㎡，地上建筑面积96837.45㎡，地下建筑面积27617.29㎡，幼儿园9600.54㎡，商业3760.06㎡，住宅81647.94㎡，住宅777套。
-                </div>
-            </div>
-            <img src="./imgs/case/case8.jfif" />
-
-        </div>
-        <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap">
-            <img src="./imgs/case/case9.jfif" />
-            <div class="content">
-                <div class="text-2xl underline underline-offset-4 ">天骄嘉苑</div>
-                <div>
-                    项目位于温岭市太平街道后应村南屏路南侧。用地面积8270㎡，总建筑面积25143.67㎡，地上建筑面积18026.45㎡，地下建筑面积7117.22㎡，商业1554.17㎡，住宅15884.12㎡，配套用房392.46㎡。住宅208套。
-                </div>
-            </div>
-        </div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
     </div>
-</body>
+    <div class="box pt-18 bg-white" id="case">
+      <p class="text-3xl text-center">项目中心</p>
+      <p class="text-2xl text-[#727272] text-center">PROJECT CENTER</p>
+      <div class="item flex bg-[#f6f6f6] mt-4 flex-wrap" id="case1">
+        <img src="./imgs/case/case1.png" />
+        <div class="content">
+          <div class="text-2xl underline underline-offset-4">水悦华庭</div>
+          <div>
+            项目位于文昌路南延、东河路南延、两城路南延三纵，与幸福路东延、泽国大道、104复线三横，共同衔接甬台温铁路.用地面积25331.70㎡，总建筑面积60511㎡，地上建筑面积39585㎡，地下建筑面积20926㎡。
+          </div>
+        </div>
+      </div>
+      <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap" id="case2">
+        <div class="content">
+          <div class="text-2xl underline underline-offset-4">金悦府</div>
+          <div>
+            金悦府的北边位于温岭的主城区，南边为城南的新中心（也就是城南新区），位于城南新区的核心位置，处于鸣鹤路和S226省道的交汇处。占地总面积约64.34亩（42893平方米），由A、B两个区块组成，是城南目前唯一的商业综合体项目。
+            A区块就是本项目的商业中心，建筑面积约为2万方的商业，由4幢4层裙房组成。B区为住宅区域，住宅总面积约为7.3万方，共计592户；住宅区域规划了18幢3层联排别墅产品，以及4幢27层、2幢25层的高层产品，共计592户。总建筑面积137533㎡，地上建筑面积94533㎡，地下建筑面积43000㎡。
+          </div>
+        </div>
+        <img src="./imgs/case/case2.jpeg" />
+      </div>
+      <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap" id="case3">
+        <img src="./imgs/case/case3.png" />
+        <div class="content">
+          <div class="text-2xl underline underline-offset-4">尚悦嘉园</div>
+          <div>
+            项目位于温岭松门镇育英东路北侧、义政路以南，位置毗邻老虎山.出让面积
+            32539 平（48.809
+            亩）总建筑面积92038.10㎡，地上建筑面积65188.60㎡，地下建筑面积26849.50㎡。
+          </div>
+        </div>
+      </div>
+      <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap" id="case4">
+        <div class="content">
+          <div class="text-2xl underline underline-offset-4">悦湖湾</div>
+          <div>
+            项目位于温岭市松门镇，总建筑面积71007.8㎡，项目占地面积24084平方米，地上建筑面积54224.8平方米，地下建筑面积16783平方米。
+          </div>
+        </div>
+        <img src="./imgs/case/case4.jpg" />
+      </div>
+      <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap" id="case5">
+        <img src="./imgs/case/case5.jpg" />
+        <div class="content">
+          <div class="text-2xl underline underline-offset-4">悦江湾名苑</div>
+          <div>
+            位于温岭市新河镇横板桥村，东至锦绣路，南至规划路，西至规划路，北至富裕路。用地面积49695㎡，总建筑面积136721.8㎡，地上总建筑面积99791.8㎡，高层住宅62286.4㎡，低层住宅12402㎡，回购住宅18380㎡，商业5002.54㎡，回购商业3300.24㎡，物业用房419.66㎡，配套用房1319.06㎡，地下建筑面积36930.0㎡，共计699套。
+          </div>
+        </div>
+      </div>
+      <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap" id="case6">
+        <div class="content">
+          <div class="text-2xl underline underline-offset-4">栖江悦</div>
+          <div>
+            位于温岭市新河镇，总建筑面积58505.06㎡，项目占地面积19590平方米，地上建筑面积43298.37平方米，地下建筑面积15206.69平方米。
+          </div>
+        </div>
+        <img src="./imgs/case/case6.jpg" />
+      </div>
+      <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap" id="case7">
+        <img src="./imgs/case/case7.jpg" />
+        <div class="content">
+          <div class="text-2xl underline underline-offset-4">玖隆印象名苑</div>
+          <div>
+            位于城东街道，总建筑面积30478.52㎡，项目占地面积11905平方米，地上建筑面积2619平方米，地下建筑面积7859.52平方米。
+          </div>
+        </div>
+      </div>
+      <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap" id="case8">
+        <div class="content">
+          <div class="text-2xl underline underline-offset-4">禧悦雅苑</div>
+          <div>
+            项目用地面积48331㎡，总建筑面积124454.74㎡，地上建筑面积96837.45㎡，地下建筑面积27617.29㎡，幼儿园9600.54㎡，商业3760.06㎡，住宅81647.94㎡，住宅777套。
+          </div>
+        </div>
+        <img src="./imgs/case/case8.jfif" />
+      </div>
+      <div class="item flex bg-[#f6f6f6] mt-10 flex-wrap" id="case9">
+        <img src="./imgs/case/case9.jfif" />
+        <div class="content">
+          <div class="text-2xl underline underline-offset-4">天骄嘉苑</div>
+          <div>
+            项目位于温岭市太平街道后应村南屏路南侧。用地面积8270㎡，总建筑面积25143.67㎡，地上建筑面积18026.45㎡，地下建筑面积7117.22㎡，商业1554.17㎡，住宅15884.12㎡，配套用房392.46㎡。住宅208套。
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <footer style="background-color: #212622; color: #fff">
+      <div class="box py-8">
+        <div class="flex justify-between flex-wrap">
+          <div class="contact-us">
+            <p class="menu-title">联系我们&nbsp;/&nbsp; CONTACTUS</p>
+            <p>品尝热线:0576-86726001 0576-86726002</p>
+            <p>传真:0576-86726003</p>
+            <p>地址:浙江省台州市温岭市石塘镇启明路16号</p>
+          </div>
+
+          <div class="service-menu footer-menu">
+            <p class="menu-title">帮助与支持</p>
+            <form>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="请输入你的姓名"
+                class="block my-6 p-2 rounded-md w-80"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="请输入你的电话"
+                class="block my-6 p-2 rounded-md w-80"
+              />
+              <textarea
+                class="block my-4 p-2 rounded-md w-80"
+                id="message"
+                name="message"
+                placeholder="请输入留言内容"
+              ></textarea>
+              <button
+                class="block my-4 px-6 py-2 rounded-md float-right text-white bg-[#AB2125]"
+                type="submit"
+              >
+                提交留言
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- <p class="icp-info">湘ICP备19026630号-1</p> -->
+        <!-- <p class="rights">&copy; 2020 云留月科技有限公司</p> -->
+        <div class="scroll-to-top">
+          <a href="#"><i class="fas fa-chevron-up"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+      var mySwiper = new Swiper("#swiper", {
+        loop: true,
+        autoplay: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            let texts = ["骏马食品工厂", "骏马房地产", "骏马酒店"];
+            let texten = [
+              "Junma Real Estate",
+              "Junma Food Factory",
+              "Junma Hotel",
+            ];
+            return `
+                  <div  class="${className} swiperItem">
+                      <div class='bullet'></div>
+                      <div class="swiper-pagination-text">
+                          <p class='text-2xl'>${texts[index]}<p>
+                          <p>${texten[index]}<p>
+                              </div>
+                  </div>
+                  `;
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
