@@ -11,53 +11,49 @@
   <script src="./css/bootstrap/tailwind.css"></script>
   <link rel="stylesheet" href="./css/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css">
-
-  <!-- <script src="./swiper/swiper-bundle.min.js.map"> </script> -->
+  <link rel="stylesheet" href="./css/animate.css" />
   <title>Document</title>
 </head>
 
 <body>
-    <header class="headFixed">
-      <div class="logo">
-        <img src="./imgs/logo.png" />
+  <header class="headFixed">
+    <div class="logo">
+      <img src="./imgs/logo.png" />
+    </div>
+    <nav>
+      <div><a href="./index.html">首页</a></div>
+      <div><a href="./about.html">关于我们</a></div>
+      <div><a href="./production.html">产品中心</a></div>
+      <div><a href="./new.html">新闻中心</a></div>
+      <div>
+        <a href="./hotel.html" class="active">酒店</a>
+        <ul class="dropdown">
+          <a href="./hotel.html" class="active">酒店首页</a>
+          <a href="./area.html">公共区域</a>
+          <a href="./room.html">房间类型</a>
+          <a href="./newhotel.html">酒店资讯</a>
+          <a href="./contacthotel.html">联系我们</a>
+        </ul>
       </div>
-      <nav>
-        <div><a href="./index.html" target="_blank">首页</a></div>
-        <div><a href="./about.html" target="_blank">关于我们</a></div>
-        <div><a href="./production.html" target="_blank">产品中心</a></div>
-        <div><a href="./new.html" target="_blank">新闻中心</a></div>
-        <div>
-          <a href="./hotel.html" target="_blank" class="active">酒店</a>
-          <ul class="dropdown">
-            <a href="./hotel.html" target="_blank" class="active">酒店首页</a>
-            <a href="./area.html" target="_blank">公共区域</a>
-            <a href="./room.html" target="_blank">房间类型</a>
-            <a href="./newhotel.html" target="_blank">酒店资讯</a>
-            <a href="./contacthotel.html" target="_blank"
-              >联系我们</a
-            >
-          </ul>
-        </div>
-        <div>
-          <a href="./realEstate.html" target="_blank">房地产</a>
-          <ul class="dropdown">
-            <a href="./realEstate.html" target="_blank">房地产首页</a
-            ><a href="./case.html" target="_blank">项目案例</a>
-          </ul>
-        </div>
-        <div><a href="./contact.html" target="_blank">联系我们</a></div>
-        <!-- <a href="#"><i class="fas fa-search"></i></a> -->
-      </nav>
-      <div class="burger" id="burger">
-        <div class="burger-line1"></div>
-        <div class="burger-line2"></div>
-        <div class="burger-line3"></div>
+      <div>
+        <a href="./realEstate.html">房地产</a>
+        <ul class="dropdown">
+          <a href="./realEstate.html">房地产首页</a><a href="./case.html">项目案例</a>
+        </ul>
       </div>
-    </header>
+      <div><a href="./contact.html">联系我们</a></div>
+      <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+    </nav>
+    <div class="burger" id="burger">
+      <div class="burger-line1"></div>
+      <div class="burger-line2"></div>
+      <div class="burger-line3"></div>
+    </div>
+  </header>
 
   <div class="swiper pb-2 bg-[#f6f6f6]" id="swiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <div class="swiper-slide" onclick="goRoom('./index.html')">
         <picture class="d-block w-100">
           <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide1.jpg" />
           <source media="(min-width: 1100px)" srcset="./imgs/pc/slide1.jpg" />
@@ -70,7 +66,7 @@
           </p>
         </div>
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide" onclick="goRoom('./hotel.html')">
         <picture class="d-block w-100">
           <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide2.jpg" />
           <source media="(min-width: 1100px)" srcset="./imgs/pc/slide2.jpg" />
@@ -87,7 +83,7 @@
           <p class="text-xl leading-loose"></p>
         </div>
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide" onclick="goRoom('./realEstate.html')">
         <picture class="d-block w-100">
           <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide3.jpg" />
           <source media="(min-width: 1100px)" srcset="./imgs/pc/slide3.jpg" />
@@ -109,9 +105,9 @@
         <div class="">
           <img src="./imgs/pc/hotelus.png" />
         </div>
-        <div class=" flex flex-col  aboutus">
-          <p class="text-2xl text-[#727272] ">ABOUT US</p>
-          <p class="text-3xl ">关于我们</p>
+        <div class=" flex flex-col  aboutus" onclick="goRoom('./contacthotel.html')">
+          <p class="text-2xl text-[#727272]  wow bounceIn">ABOUT US</p>
+          <p class="text-3xl  wow bounceIn">关于我们</p>
           <p class="my-4 ">
             温岭石塘开元名庭酒店立于东海-温岭·石塘曙光大道9号，千年曙之滨--一光碑/金沙滩景区/七彩小岛等距离酒店5公里内，是集餐饮、客房、会议、休闲娱乐为一体的国潮唐风商务度假酒店</p>
           <p>酒店拥有各式舒适高端客房124间/套同时为您提供自助餐厅、包厢、多功能厅、健身房、洗衣房等精致设施服务，可承品质高要求的会议、宴会及社交活动。</p>
@@ -120,8 +116,8 @@
     </div>
 
     <div class="box pt-18 bg-[#f6f6f6]">
-      <p class="text-3xl  text-center">公共区域</p>
-      <p class="text-2xl text-[#727272]  text-center ">PUBLIC AREAS</p>
+      <p class="text-3xl  text-center  wow slideInUp">公共区域</p>
+      <p class="text-2xl text-[#727272]  text-center  wow slideInUp">PUBLIC AREAS</p>
       <div class="flex bg-white mt-8">
         <picture class="d-block w-[60%]">
           <source media="(max-width: 1100px)" srcset="./imgs/mobile/1.jpg" />
@@ -175,8 +171,8 @@
     </div>
 
     <div class="box pt-18 bg-[#f6f6f6]">
-      <p class="text-3xl  text-center">房间风格</p>
-      <p class="text-2xl text-[#727272]  text-center ">ROOM STYLE</p>
+      <p class="text-3xl  text-center  wow slideInUp">房间风格</p>
+      <p class="text-2xl text-[#727272]  text-center  wow slideInUp">ROOM STYLE</p>
     </div>
     <div class="flex mb-12 roomtype flex-wrap justify-between">
       <picture onclick="goRoom('1')">
@@ -208,31 +204,31 @@
     </div>
 
     <div class="box pt-18 ">
-      <p class="text-3xl  text-center">酒店资讯</p>
-      <p class="text-2xl text-[#727272]  text-center ">HOTEL INFORMATION</p>
+      <p class="text-3xl  text-center wow slideInUp">酒店资讯</p>
+      <p class="text-2xl text-[#727272]  text-center  wow slideInUp">HOTEL INFORMATION</p>
       <div class="newlist my-2" id="newlist">
 
         <div class="mt-4 bg-[#f6f6f6]">
-          <a href="https://mp.weixin.qq.com/s/AecvnL7pRELjK_ibj1KtYQ" target="_blank">
+          <a href="https://mp.weixin.qq.com/s/AecvnL7pRELjK_ibj1KtYQ">
             <div class="flex item flex-wrap ">
               <img src="./imgs/news/new2024.png" />
               <div class="titleBox">
                 <p class="text-xl">荣誉时刻|温岭石塘开元名庭酒店荣获“浙江省银桂品质饭店”称号</p>
                 <div class="btn  hover:bg-[#ee2527] hover:text-white">
-                  <a href="https://mp.weixin.qq.com/s/AecvnL7pRELjK_ibj1KtYQ" target="_blank">查看详情</a>
+                  <a href="https://mp.weixin.qq.com/s/AecvnL7pRELjK_ibj1KtYQ">查看详情</a>
                 </div>
               </div>
             </div>
           </a>
         </div>
         <div class="mt-4 bg-[#f6f6f6]">
-          <a href="https://mp.weixin.qq.com/s/ONQwrUGIvp4JvSfcYUXWug" target="_blank">
+          <a href="https://mp.weixin.qq.com/s/ONQwrUGIvp4JvSfcYUXWug">
             <div class="flex item flex-wrap ">
               <img src="./imgs/news/news2023.png" />
               <div class="titleBox">
                 <p class="text-xl">官宣！2023年度携程受欢迎新开业酒店！</p>
                 <div class="btn  hover:bg-[#ee2527] hover:text-white">
-                  <a href="https://mp.weixin.qq.com/s/ONQwrUGIvp4JvSfcYUXWug" target="_blank">查看详情</a>
+                  <a href="https://mp.weixin.qq.com/s/ONQwrUGIvp4JvSfcYUXWug">查看详情</a>
                 </div>
               </div>
             </div>
@@ -240,8 +236,8 @@
         </div>
       </div>
 
-      <div class="text-[#ee2527] text-center mt-4 text-[14px]">
-        <a href="./newhotel.html" target="_blank">查看详情</a>
+      <div class="text-[#ee2527] text-center mt-4 ">
+        <a href="./newhotel.html" class="text-[16px]">查看详情</a>
       </div>
     </div>
 
@@ -287,9 +283,8 @@
         </div>
         <div class="text-center">
           <div>关注我们</div>
-          <div class="my-2"><img src="./imgs/qrcode.png" /></div>
+          <div class="my-2 flex justify-center"><img src="./imgs/qrcode.webp" class=" w-[40%] " /></div>
           <div>微信公众号</div>
-
         </div>
 
       </div>
@@ -299,9 +294,12 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/swiper-bundle.js"> </script>
     <script src="./js/swiper-bundle.min.js"> </script>
+    <script src="./js/wow.js"> </script>
     <script>
+      new WOW({ animateClass: 'animated', boxClass: 'wow' }).init()
       function goRoom(type) {
-        window.location = './room.html?type=' + type
+        window.location = type.length > 2 ? type : './room.html?type=' + type
+
       }
       var mySwiper = new Swiper('.swiper', {
         loop: true,

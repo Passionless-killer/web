@@ -1,11 +1,15 @@
 #realEstate {
-
   @media (min-width: 1101px) {
     .about {
       width: 50%;
       margin-left: 40%;
     }
-
+    .label div {
+      display: flex;
+    }
+    .case > a {
+      width: 11.1111%;
+    }
   }
 
   @media (max-width: 1100px) {
@@ -13,12 +17,21 @@
       padding: 0px 14%;
     }
 
-    footer .contact-us,
-    .service-menu {
-      width: 48%;
+    .contact-us {
+      width: 59%;
     }
 
-    footer .service-menu form>input,textarea {
+    .service-menu {
+      width: 40%;
+    }
+    .service-menu .menu-title {
+      text-align: end;
+    }
+    .case > a:nth-child(-n + 8) {
+      width: 49%;
+    }
+    .service-menu form > input,
+    textarea {
       width: 100%;
     }
   }

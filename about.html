@@ -11,99 +11,94 @@
   <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css">
 
   <script src="./css/bootstrap/tailwind.css"></script>
-
+  <link rel="stylesheet" href="./css/animate.css" />
   <link href="./css/index.css" rel="stylesheet" />
   <link href="./css/aboutus.css" rel="stylesheet" />
 </head>
 
 <body>
-   <header class="headFixed">
-      <div class="logo">
-        <img src="./imgs/logo.png" />
+  <header class="headFixed">
+    <div class="logo">
+      <img src="./imgs/logo.png" />
+    </div>
+    <nav>
+      <div><a href="./index.html">首页</a></div>
+      <div><a href="./about.html" class="active">关于我们</a></div>
+      <div><a href="./production.html">产品中心</a></div>
+      <div><a href="./new.html">新闻中心</a></div>
+      <div>
+        <a href="./hotel.html">酒店</a>
+        <ul class="dropdown">
+          <a href="./hotel.html">酒店首页</a>
+          <a href="./area.html">公共区域</a>
+          <a href="./room.html">房间类型</a>
+          <a href="./newhotel.html">酒店资讯</a>
+          <a href="./contacthotel.html">联系我们</a>
+        </ul>
       </div>
-      <nav>
-        <div><a href="./index.html" target="_blank">首页</a></div>
-        <div><a href="./about.html" target="_blank"  class="active">关于我们</a></div>
-        <div><a href="./production.html" target="_blank">产品中心</a></div>
-        <div><a href="./new.html" target="_blank">新闻中心</a></div>
-        <div>
-          <a href="./hotel.html" target="_blank">酒店</a>
-          <ul class="dropdown">
-            <a href="./hotel.html" target="_blank">酒店首页</a>
-            <a href="./area.html" target="_blank">公共区域</a>
-            <a href="./room.html" target="_blank">房间类型</a>
-            <a href="./newhotel.html" target="_blank">酒店资讯</a>
-            <a href="./contacthotel.html" target="_blank"
-              >联系我们</a
-            >
-          </ul>
-        </div>
-        <div>
-          <a href="./realEstate.html" target="_blank">房地产</a>
-          <ul class="dropdown">
-            <a href="./realEstate.html" target="_blank">房地产首页</a
-            ><a href="./case.html" target="_blank">项目案例</a>
-          </ul>
-        </div>
-        <div><a href="./contact.html" target="_blank">联系我们</a></div>
-        <!-- <a href="#"><i class="fas fa-search"></i></a> -->
-      </nav>
-      <div class="burger" id="burger">
-        <div class="burger-line1"></div>
-        <div class="burger-line2"></div>
-        <div class="burger-line3"></div>
+      <div>
+        <a href="./realEstate.html">房地产</a>
+        <ul class="dropdown">
+          <a href="./realEstate.html">房地产首页</a><a href="./case.html">项目案例</a>
+        </ul>
       </div>
-    </header>
+      <div><a href="./contact.html">联系我们</a></div>
+      <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+    </nav>
+    <div class="burger" id="burger">
+      <div class="burger-line1"></div>
+      <div class="burger-line2"></div>
+      <div class="burger-line3"></div>
+    </div>
+  </header>
 
-  <div class="swiper pb-2 bg-[#F0f0f0]" id="swiper">
+  <div class="swiper pb-2 bg-white" id="swiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <div class="swiper-slide" onclick="goRoom('./index.html')">
         <picture class="d-block w-100">
           <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide1.jpg" />
           <source media="(min-width: 1100px)" srcset="./imgs/pc/slide1.jpg" />
-          <img class="" width="100%" src="./imgs/pc/slide1.jpg" alt=" ">
+          <img class="" width="100%" src="./imgs/pc/slide1.jpg" alt=" " />
         </picture>
-        <div class="title ">
-          <p class="text-xl leading-loose">"骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
-            每一位消费者及合作伙伴,做到尽善尽美。</p>
+        <div class="title">
+          <p class="text-xl leading-loose">
+            "骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
+            每一位消费者及合作伙伴,做到尽善尽美。
+          </p>
         </div>
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide" onclick="goRoom('./hotel.html')">
         <picture class="d-block w-100">
           <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide2.jpg" />
           <source media="(min-width: 1100px)" srcset="./imgs/pc/slide2.jpg" />
-          <img class="" width="100%" src="./imgs/pc/slide2.jpg" alt=" ">
+          <img class="" width="100%" src="./imgs/pc/slide2.jpg" alt=" " />
         </picture>
-        <div class="title ">
-          <p class="text-2xl leading-loose wordspace">是住宿&ensp;/&ensp;也是度假&ensp;/&ensp;更是观光</p>
+        <div class="title">
+          <p class="text-2xl leading-loose wordspace">
+            是住宿&ensp;/&ensp;也是度假&ensp;/&ensp;更是观光
+          </p>
           <div class="text-base leading-loose text-center warp">
-            <p>
-              国潮唐风度假酒店&emsp;
-              黄金旅游地段&emsp;
-            </p>
-            <p>
-              休闲度假胜地&emsp;
-              感受非凡的入住体验
-            </p>
+            <p>国潮唐风度假酒店&emsp; 黄金旅游地段&emsp;</p>
+            <p>休闲度假胜地&emsp; 感受非凡的入住体验</p>
           </div>
           <p class="text-xl leading-loose"></p>
         </div>
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide" onclick="goRoom('./realEstate.html')">
         <picture class="d-block w-100">
           <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide3.jpg" />
           <source media="(min-width: 1100px)" srcset="./imgs/pc/slide3.jpg" />
-          <img class="" width="100%" src="./imgs/pc/slide3.jpg" alt=" ">
+          <img class="" width="100%" src="./imgs/pc/slide3.jpg" alt=" " />
         </picture>
-        <div class="title ">
+        <div class="title">
           <p class="text-base leading-loose">
-            20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!</p>
+            20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!
+          </p>
         </div>
       </div>
     </div>
     <!-- 如果需要分页器 -->
     <div class="swiper-pagination"></div>
-
   </div>
   <div class="box pt-18" style="background-color: #f6f6f6">
     <div class="row">
@@ -112,7 +107,7 @@
       </div>
       <div class="col-lg-6 col-xs-12 flex flex-col justify-between">
         <div>
-          <p class="text-2xl title">
+          <p class="text-2xl title wow bounceIn">
             关于我们&nbsp;/&nbsp;<span class="text-2xl">ABOUT US</span>
           </p>
           <div class="flex bg justify-between">
@@ -220,7 +215,7 @@
     </div>
 
     <div class="box">
-      <p class="text-2xl title text-center mb-4">
+      <p class="text-2xl title text-center mb-4  wow slideInUp">
         企业优势&nbsp;/&nbsp;<span class="text-2xl">ENTERPRISE ADVANTAGES</span>
       </p>
       <div class="swiper mySwiperitem">
@@ -317,16 +312,21 @@
   <footer class="mt-8 py-4  text-white bg-[#8aa089]">
     <div class="box">
       <div class="flex justify-between flex-wrap">
-        <div class="contact-us text-start w-[48%]">
+        <div class="contact-us text-start w-[58%]">
           <p class="menu-title">联系我们&nbsp; / &nbsp;CONTACTUS</p>
-          <p>品尝热线:0576-86726001 0576-86726002</p>
-          <p class="my-2">传真:0576-86726003</p>
-          <p>地址:浙江省台州市温岭市石塘镇启明路16号</p>
+          <div class="flex label">品尝热线： <div class="flex-1">
+              <p class="mr-1">0576-86726001</p>
+              <p>0576-86726002</p>
+            </div>
+          </div>
+          <p class="my-2">传真： 0576-86726003</p>
+          <div class="flex">地址：<p class="flex-1">浙江省台州市温岭市石塘镇启明路16号</p>
+          </div>
         </div>
 
 
-        <div class="service-menu footer-menu w-[50%]">
-          <p class="menu-title">在线留言&nbsp;/&nbsp;MESSAGE</p>
+        <div class="service-menu footer-menu w-[40%]">
+          <p class="menu-title">在线留言&nbsp;/&nbsp; MESSAGE</p>
 
           <form>
             <input type="text" id="name" name="name" placeholder="请输入你的姓名" class=" my-2 p-2 rounded-md w-[80%]" />
@@ -349,7 +349,12 @@
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/swiper-bundle.js"> </script>
   <script src="./js/swiper-bundle.min.js"> </script>
+  <script src="./js/wow.js"> </script>
   <script>
+    new WOW({ animateClass: 'animated', boxClass: 'wow' }).init()
+    function goRoom(url) {
+      window.location = url
+    }
     var mySwiper = new Swiper("#swiper", {
       loop: true,
       autoplay: true,

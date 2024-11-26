@@ -56,7 +56,7 @@ header nav div {
   transition: color 0.3s, text-decoration 1000s;
 }
 
-header nav div:hover>a {
+header nav div:hover > a {
   color: var(--primary-color);
   text-decoration: underline;
 }
@@ -74,7 +74,7 @@ header nav div ul a {
 header nav div:hover .dropdown a:hover {
   color: var(--primary-color);
   text-decoration: underline;
-  }
+}
 
 header nav i {
   color: var(--text-color-lightest);
@@ -140,7 +140,7 @@ header.sticky nav i {
   color: var(--text-color-dark-gray);
 }
 
-.box .bg>div {
+.box .bg > div {
   background-color: #e8e8e8;
 }
 
@@ -171,12 +171,13 @@ header.sticky nav i {
 }
 
 form input:focus,
-select:focus {
+select:focus,
+textarea:focus {
   outline-color: #ee2527;
 }
 
 @media (min-width: 1101px) {
-  .classic>div {
+  .classic > div {
     width: 24%;
   }
 
@@ -246,7 +247,8 @@ select:focus {
     align-items: center;
   }
 
-  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal div.swiper-pagination-bullet.swiperItem {
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal
+    div.swiper-pagination-bullet.swiperItem {
     margin: 16px;
   }
 
@@ -278,7 +280,8 @@ select:focus {
     /* 圆的边框颜色 */
   }
 
-  .swiper-pagination-bullet.swiper-pagination-bullet-active .swiper-pagination-text {
+  .swiper-pagination-bullet.swiper-pagination-bullet-active
+    .swiper-pagination-text {
     color: var(--primary-color);
     /* 圆的边框颜色 */
   }
@@ -310,13 +313,13 @@ select:focus {
     flex-direction: column;
   }
 
-  .cate1>div {
+  .cate1 > div {
     padding: 60px 10%;
     display: flex;
     flex: 1;
   }
 
-  .cate1>div:first-child {
+  .cate1 > div:first-child {
     margin-bottom: 16px;
   }
 
@@ -351,7 +354,7 @@ select:focus {
     width: 25%;
   }
 
-  .new>img {
+  .new > img {
     width: 40%;
   }
 }
@@ -366,12 +369,12 @@ select:focus {
   }
 }
 
-.newList>div {
+.newList > div {
   padding: 16px;
   border-bottom: 1px solid #f6f6f6;
 }
 
-.newList>div>div:first-child {
+.newList > div > div:first-child {
   padding: 8px;
   width: 180px;
   margin-right: 16px;
@@ -397,9 +400,8 @@ input:hover {
   margin-bottom: 20px;
 }
 
-
 @media (max-width: 1100px) {
-  .classic>div {
+  .classic > div {
     width: 46%;
   }
 
@@ -468,7 +470,7 @@ input:hover {
     animation: slideDown 0.6s ease-out forwards;
   }
 
-  header.open nav>* {
+  header.open nav > * {
     font-size: 18px;
     margin: 4px 0;
     opacity: 0;
@@ -478,7 +480,7 @@ input:hover {
     justify-items: end;
   }
 
-  header.opem nav>i.fas {
+  header.opem nav > i.fas {
     margin-top: 10px;
   }
 
@@ -552,9 +554,10 @@ input:hover {
     }
 
     to {
-      height: 100vh;
-      padding-top: 80px;
+      height: 99vh;
       opacity: 1;
+      overflow-y: auto;
+      top: 12vw;
     }
   }
 
@@ -583,11 +586,11 @@ input:hover {
     margin-top: 16px;
   }
 
-  .cate1>div {
+  .cate1 > div {
     padding: 16px;
   }
 
-  .cate1>div:first-child {
+  .cate1 > div:first-child {
     margin-right: 16px;
   }
 
