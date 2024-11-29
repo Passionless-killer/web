@@ -357,6 +357,9 @@ textarea:focus {
   .new > img {
     width: 40%;
   }
+  .good > div {
+    width: calc(25% - 12px);
+  }
 }
 
 @keyframes dropDown {
@@ -644,5 +647,8 @@ input:hover {
   .activities {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 36px;
+  }
+  .good > div {
+    width: calc(50% - 4px);
   }
 }
