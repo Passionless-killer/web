@@ -289,28 +289,28 @@
 
       </div>
     </footer>
+  </div>
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/swiper-bundle.js"> </script>
+  <script src="./js/swiper-bundle.min.js"> </script>
+  <script src="./js/wow.js"> </script>
+  <script>
+    new WOW({ animateClass: 'animated', boxClass: 'wow' }).init()
+    function goRoom(type) {
+      window.location = type.length > 2 ? type : './room.html?type=' + type
 
-    <script src="./js/index.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/swiper-bundle.js"> </script>
-    <script src="./js/swiper-bundle.min.js"> </script>
-    <script src="./js/wow.js"> </script>
-    <script>
-      new WOW({ animateClass: 'animated', boxClass: 'wow' }).init()
-      function goRoom(type) {
-        window.location = type.length > 2 ? type : './room.html?type=' + type
-
-      }
-      var mySwiper = new Swiper('.swiper', {
-        loop: true,
-        autoplay: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          renderBullet: function (index, className) {
-            let texts = ['骏马食品工厂', '骏马房地产', '骏马酒店']
-            let texten = ['Junma Real Estate', 'Junma Food Factory', 'Junma Hotel']
-            return `
+    }
+    var mySwiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          let texts = ['骏马食品工厂', '骏马房地产', '骏马酒店']
+          let texten = ['Junma Real Estate', 'Junma Food Factory', 'Junma Hotel']
+          return `
                     <div  class="${className} swiperItem">
                         <div class='bullet'></div>
                         <div class="swiper-pagination-text">
@@ -319,10 +319,10 @@
                                 </div>
                     </div>
                     `;
-          },
         },
-      })
-    </script>
+      },
+    })
+  </script>
 </body>
 
 </html>
