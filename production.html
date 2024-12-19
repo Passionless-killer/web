@@ -2,179 +2,501 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="./index.css" rel="stylesheet" />
-  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.js"> </script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js.map"> </script>
-
-  <!-- <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
-  <link href="./index.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="./css/index.css" rel="stylesheet" />
   <link href="./production.css" rel="stylesheet" />
-  <!-- <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="./css/bootstrap/tailwind.css"></script>
+  <link rel="stylesheet" href="./css/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/swiper/lightGallery.css">
 </head>
 
 <body>
+  <header class="headFixed">
+    <div class="logo">
+      <img src="./imgs/logo.png" />
+    </div>
+    <nav>
+      <div><a href="./index.html">首页</a></div>
+      <div><a href="./about.html">关于我们</a></div>
+      <div><a href="./production.html" class="active">产品中心</a></div>
+      <div><a href="./new.html">新闻中心</a></div>
+      <div>
+        <a href="./hotel.html">酒店</a>
+        <ul class="dropdown">
+          <a href="./hotel.html">酒店首页</a>
+          <a href="./area.html">公共区域</a>
+          <a href="./room.html">房间类型</a>
+          <a href="./newhotel.html">酒店资讯</a>
+          <a href="./contacthotel.html">联系我们</a>
+        </ul>
+      </div>
+      <div>
+        <a href="./realEstate.html">房地产</a>
+        <ul class="dropdown">
+          <a href="./realEstate.html">房地产首页</a><a href="./case.html">项目案例</a>
+        </ul>
+      </div>
+      <div><a href="./contact.html">联系我们</a></div>
+      <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+    </nav>
+    <div class="burger" id="burger">
+      <div class="burger-line1"></div>
+      <div class="burger-line2"></div>
+      <div class="burger-line3"></div>
+    </div>
+  </header>
+
+  <div class="swiper pb-2 bg-white" id="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" onclick="goRoom('./index.html')">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide1.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide1.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide1.jpg" alt=" " />
+        </picture>
+        <div class="title">
+          <p class="text-xl leading-loose">
+            "骏马美食,料真心诚,自然成就好味道",骏马人传承匠心,真诚对待每一个产品,
+            每一位消费者及合作伙伴,做到尽善尽美。
+          </p>
+        </div>
+      </div>
+      <div class="swiper-slide" onclick="goRoom('./hotel.html')">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide2.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide2.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide2.jpg" alt=" " />
+        </picture>
+        <div class="title">
+          <p class="text-2xl leading-loose wordspace">
+            是住宿&ensp;/&ensp;也是度假&ensp;/&ensp;更是观光
+          </p>
+          <div class="text-base leading-loose text-center warp">
+            <p>国潮唐风度假酒店&emsp; 黄金旅游地段&emsp;</p>
+            <p>休闲度假胜地&emsp; 感受非凡的入住体验</p>
+          </div>
+          <p class="text-xl leading-loose"></p>
+        </div>
+      </div>
+      <div class="swiper-slide" onclick="goRoom('./realEstate.html')">
+        <picture class="d-block w-100">
+          <source media="(max-width: 1100px)" srcset="./imgs/mobile/slide3.jpg" />
+          <source media="(min-width: 1100px)" srcset="./imgs/pc/slide3.jpg" />
+          <img class="" width="100%" src="./imgs/pc/slide3.jpg" alt=" " />
+        </picture>
+        <div class="title">
+          <p class="text-base leading-loose">
+            20年来，以“骏马食品”为起源，骏马领导团队相继成立温岭市骏马房地产开发有限公司、温岭市骏成房地产开发有限公司、温岭市骏豪物业有限公司等。“骏马集团”飞奔向前，共创未来，给您最好服务!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+  </div>
   <div id="production">
     <div class="box">
-      <p class="text-2xl title text-center mb-1">产品中心<br /><span class="text-2xl">PRODUCT CENTER</span>
+      <p class="text-2xl title text-center mb-1">
+        产品中心<br /><span class="text-2xl">PRODUCT CENTER</span>
       </p>
 
       <div class="swiper mySwiper">
-        <div class="swiper-pagination" style="top: 10px;width: 100%"></div>
+        <div class="swiper-pagination" style="top: 10px; width: 100% ;max-height: 6vw;"></div>
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="flex justify-between bg-white flex-wrap">
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>鱼丸</p>
+          <div class="swiper-slide px-2">
+            <div class="flex justify-between bg-white flex-wrap ">
+              <div class="item" id="box1-1">
+                <img src="./imgs/production/1-1-1.jpg" />
+                <p>章鱼丸</p>
               </div>
-              <div class="item">
-                <img src="./web/about6.png" />
+              <div class="item" id="box1-2">
+                <img src="./imgs/production/1-2-1.jpg" />
+                <p>小黄鸭</p>
+              </div>
+              <div class="item" id="box1-3">
+                <img src="./imgs/production/1-3-1.jpg" />
+                <p>亲亲肠</p>
+              </div>
+              <div class="item" id="box1-4">
+                <img src="./imgs/production/1-4-1.jpg" />
+
+                <p>招财兔</p>
+              </div>
+              <div class="item" id="box1-5">
+                <img src="./imgs/production/1-5-1.jpg" />
+                <p>功夫熊猫</p>
+              </div>
+              <div class="item" id="box1-6">
+                <img src="./imgs/production/1-6-1.jpg" />
+                <p>水煮鱼</p>
+              </div>
+              <div class="item" id="box1-7">
+                <img src="./imgs/production/1-7-1.jpg" />
+                <p>翡翠龙虾饼</p>
+              </div>
+              <div class="item" id="box1-8">
+                <img src="./imgs/production/1-8-1.jpg" />
+                <p>燕肉饺</p>
+              </div>
+              <div class="item" id="box1-9">
+                <img src="./imgs/production/1-9-1.jpg" />
+                <p>亲亲糕</p>
+              </div>
+              <div class="item" id="box1-10">
+                <img src="./imgs/production/1-10-1.jpg" />
+                <p>吉祥三宝</p>
+              </div>
+              <div class="item" id="box1-11">
+                <img src="./imgs/production/1-11-1.jpg" />
+                <p>水晶包</p>
+              </div>
+              <div class="item" id="box1-12">
+                <img src="./imgs/production/1-12-1.jpg" />
+                <p>驰骋什锦火锅丸</p>
+              </div>
+              <div class="item" id="box1-13">
+                <img src="./imgs/production/1-13-1.jpg" />
+                <p>虎皮鱼饼</p>
+              </div>
+              <div class="item" id="box1-14">
+                <img src="./imgs/production/1-14-1.jpg" />
+                <p>鱼籽墨鱼爆蛋</p>
+              </div>
+              <div class="item" id="box1-15">
+                <img src="./imgs/production/1-15-1.jpg" />
+                <p>鳕鱼豆腐</p>
+              </div>
+              <div class="item" id="box1-16">
+                <img src="./imgs/production/1-16-1.jpg" />
+                <p>黄金鱿鱼卷</p>
+              </div>
+              <div class="item" id="box1-17">
+                <img src="./imgs/production/1-17-1.jpg" />
+                <p>甜不辣</p>
+              </div>
+              <div class="item" id="box1-18">
+                <img src="./imgs/production/1-18-1.jpg" />
+                <p>牛肉丸</p>
+              </div>
+              <div class="item" id="box1-19">
+                <img src="./imgs/production/1-19-1.jpg" />
+                <p>撒尿肉丸</p>
+              </div>
+              <div class="item" id="box1-20">
+                <img src="./imgs/production/1-20-1.jpg" />
+                <p>包心鱼丸</p>
+              </div>
+              <div class="item" id="box1-21">
+                <img src="./imgs/production/1-21-1.jpg" />
+                <p>墨鱼丸</p>
+              </div>
+              <div class="item" id="box1-22">
+                <img src="./imgs/production/1-22-1.jpg" />
+                <p>鱼籽包</p>
+              </div>
+              <div class="item" id="box1-23">
+                <img src="./imgs/production/1-23-1.jpg" />
+                <p>潮汕牛肉丸</p>
+              </div>
+              <div class="item" id="box1-24">
+                <img src="./imgs/production/1-24-1.jpg" />
+                <p>鱼籽龙虾球</p>
+              </div>
+              <div class="item" id="box1-25">
+                <img src="./imgs/production/1-25-1.jpg" />
+                <p>香菇贡丸</p>
+              </div>
+              <div class="item" id="box1-26">
+                <img src="./imgs/production/1-26-1.jpg" />
+                <p>鱼肉卷 淡水丸</p>
+              </div>
+              <div class="item" id="box1-27">
+                <img src="./imgs/production/1-27-1.jpg" />
                 <p>虾丸</p>
               </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>风味牛肉丸</p>
+              <div class="item" id="box1-28">
+                <img src="./imgs/production/1-28-1.jpg" />
+                <p>海螺丸</p>
               </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>撒尿牛肉丸</p>
+              <div class="item" id="box1-29">
+                <img src="./imgs/production/1-29-1.jpg" />
+                <p>葱花鱼丸</p>
               </div>
-              <div class="item">
-                <img src="./web/about6.png" />
+              <div class="item" id="box1-30">
+                <img src="./imgs/production/1-30-1.jpg" />
                 <p>鱼丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>虾丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>风味牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>撒尿牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>鱼丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>虾丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>风味牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>撒尿牛肉丸</p>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide px-2">
             <div class="flex justify-between bg-white flex-wrap">
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>鱼丸</p>
+              <div class="item" id="box2-1">
+                <img src="./imgs/production/2-1-1.jpg" />
+                <p>鱼籽福袋</p>
               </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>虾丸</p>
+              <div class="item" id="box2-2">
+                <img src="./imgs/production/2-2-1.jpg" />
+                <p>关东煮</p>
               </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>风味牛肉丸</p>
+              <div class="item" id="box2-3">
+                <img src="./imgs/production/2-3-1.jpg" />
+                <p>一碗麻辣烫</p>
               </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>撒尿牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>鱼丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>虾丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>风味牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>撒尿牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>鱼丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>虾丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>风味牛肉丸</p>
-              </div>
-              <div class="item">
-                <img src="./web/about6.png" />
-                <p>撒尿牛肉丸</p>
+              <div class="item" id="box2-4">
+                <img src="./imgs/production/2-4-1.jpg" />
+                <p>鱼饼</p>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-
+          <div class="swiper-slide px-2">
+            <div class="flex justify-between bg-white flex-wrap ">
+              <div class="item" id="box3-1">
+                <img src="./imgs/production/3-1-1.jpg" />
+                <p>果蔬鲜虾饼</p>
+              </div>
+              <div class="item" id="box3-2">
+                <img src="./imgs/production/3-2-1.jpg" />
+                <p>鱼籽墨鱼饼</p>
+              </div>
+              <div class="item" id="box3-3">
+                <img src="./imgs/production/3-3-1.jpg" />
+                <p>原汁墨鱼饼</p>
+              </div>
+              <div class="item" id="box3-4">
+                <img src="./imgs/production/3-4-1.jpg" />
+                <p>鱼籽鳕鱼饼</p>
+              </div>
+              <div class="item" id="box3-5">
+                <img src="./imgs/production/3-5-1.jpg" />
+                <p>咔滋脆虾饼</p>
+              </div>
+              <div class="item" id="box3-6">
+                <img src="./imgs/production/3-6-1.jpg" />
+                <p> T骨猪排</p>
+              </div>
+              <div class="item" id="box3-7">
+                <img src="./imgs/production/3-7-1.jpg" />
+                <p> 原切牛排</p>
+              </div>
+              <div class="item" id="box3-8">
+                <img src="./imgs/production/3-8-1.jpg" />
+                <p> 超值烟腩片</p>
+              </div>
+              <div class="item" id="box3-9">
+                <img src="./imgs/production/3-9-1.jpg" />
+                <p> 梅花肉片</p>
+              </div>
+              <div class="item" id="box3-10">
+                <img src="./imgs/production/3-10-1.jpg" />
+                <p>纯肉肠</p>
+              </div>
+              <div class="item" id="box3-11">
+                <img src="./imgs/production/3-11-1.jpg" />
+                <p>黑胡椒纯肉肠</p>
+              </div>
+              <div class="item" id="box3-12">
+                <img src="./imgs/production/3-12-1.jpg" />
+                <p>鲜虾肠</p>
+              </div>
+              <div class="item" id="box3-13">
+                <img src="./imgs/production/3-13-1.jpg" />
+                <p>墨鱼肠</p>
+              </div>
+              <div class="item" id="box3-14">
+                <img src="./imgs/production/3-14-1.jpg" />
+                <p>爆浆芝士肠</p>
+              </div>
+              <div class="item" id="box3-15">
+                <img src="./imgs/production/3-15-1.jpg" />
+                <p>波波肠</p>
+              </div>
+              <div class="item" id="box3-16">
+                <img src="./imgs/production/3-16-1.jpg" />
+                <p>鲍抱虾</p>
+              </div>
+            </div>
           </div>
-          <div class="swiper-slide">
-
+          <div class="swiper-slide px-2">
+            <div class="flex justify-between bg-white flex-wrap">
+              <div class="item" id="box4-1">
+                <img src="./imgs/production/4-1-1.jpg" />
+                <p>小青鱼</p>
+              </div>
+              <div class="item" id="box4-2">
+                <img src="./imgs/production/4-2-1.jpg" />
+                <p>小黄花鱼</p>
+              </div>
+              <div class="item" id="box4-3">
+                <img src="./imgs/production/4-3-1.jpg" />
+                <p>红斑鱼</p>
+              </div>
+              <div class="item" id="box4-4">
+                <img src="./imgs/production/4-4-1.jpg" />
+                <p>东海带鱼鱼排</p>
+              </div>
+              <div class="item" id="box4-5">
+                <img src="./imgs/production/4-5-1.jpg" />
+                <p>深海红斑鱼排</p>
+              </div>
+              <div class="item" id="box4-6">
+                <img src="./imgs/production/4-6-1.jpg" />
+                <p>黄花鱼</p>
+              </div>
+            </div>
           </div>
-          <div class="swiper-slide">
-
-          </div>
+          <div class="swiper-slide px-2"></div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Swiper JS -->
-  <script src="./index.js"></script>
+
+  <footer class="mt-8 py-4  text-white bg-[#8aa089]">
+    <div class="box">
+      <div class="flex justify-between flex-wrap">
+        <div class="contact-us text-start w-[58%]">
+          <p class="menu-title">联系我们&nbsp; / &nbsp;CONTACTUS</p>
+          <div class="flex label">品尝热线： <div class="flex-1">
+              <p class="mr-1">0576-86726001</p>
+              <p>0576-86726002</p>
+            </div>
+          </div>
+          <p class="my-2">传真： 0576-86726003</p>
+          <div class="flex">地址：<p class="flex-1">浙江省台州市温岭市石塘镇启明路16号</p>
+          </div>
+        </div>
 
 
-  <!-- Initialize Swiper -->
+        <div class="service-menu footer-menu w-[40%]">
+          <p class="menu-title">在线留言&nbsp;/&nbsp; MESSAGE</p>
+
+          <form>
+            <input type="text" id="name" name="name" placeholder="请输入你的姓名" class=" my-2 p-2 rounded-md w-[80%]" />
+            <input type="email" id="email" name="email" placeholder="请输入你的电话" class=" my-2 p-2 rounded-md w-[80%]" />
+            <textarea class=" my-2 p-2 rounded-md w-[80%]" id="message" name="message" placeholder="请输入留言内容"></textarea>
+            <div>
+              <button class=" my-2 px-6 py-2 rounded-md t text-white bg-[#AB2125]" type="submit">提交留言</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <hr class="h-[1px] w-[90%] m-auto py-2" />
+    <p class="text-center py-2"> <a href="https://beian.miit.gov.cn" target="_blank">浙ICP备2024140005号-1</a></p>
+  </footer>
+
+
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/swiper-bundle.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/lightGallery.js"></script>
   <script>
-       function goRoom(url) {
-      window.location = url
+    function initializeGallery(images) {
+      lightGallery(document.createElement('div'), {
+        dynamic: true,
+        dynamicEl: images, // 将要展示的图片集合
+        download: false, // 禁用下载按钮
+        mode: 'lg-fade', // 淡入淡出切换效果
+        speed: 600, // 切换速度
+      }).openGallery();
+    }
+
+    function handleImg() {
+      for (let i = 1; i <= 30; i++) {
+        document.getElementById('box1-' + i).addEventListener('click', function () {
+          const images = [
+            { src: './imgs/production/1-' + i + '-1.jpg', thumb: './imgs/production/1-' + i + '-1.jpg', subHtml: '<p>章鱼丸</p>' },
+            { src: './imgs/production/1-' + i + '-2.jpg', thumb: './imgs/production/1-' + i + '-2.jpg', subHtml: '<p>章鱼丸</p>' },
+            { src: './imgs/production/1-' + i + '-3.jpg', thumb: './imgs/production/1-' + i + '-3.jpg', subHtml: '<p>章鱼丸</p>' },
+          ];
+          initializeGallery(images);
+        });
+      }
+      for (let i = 1; i <= 4; i++) {
+        document.getElementById('box2-' + i).addEventListener('click', function () {
+          const images = [
+            { src: './imgs/production/2-' + i + '-1.jpg', thumb: './imgs/production/2-' + i + '-1.jpg', subHtml: '<p>章鱼丸</p>' },
+            { src: './imgs/production/2-' + i + '-2.jpg', thumb: './imgs/production/2-' + i + '-2.jpg', subHtml: '<p>章鱼丸</p>' },
+            { src: './imgs/production/2-' + i + '-3.jpg', thumb: './imgs/production/2-' + i + '-3.jpg', subHtml: '<p>章鱼丸</p>' },
+          ];
+          initializeGallery(images);
+        });
+      }
+      for (let i = 1; i <= 16; i++) {
+        document.getElementById('box3-' + i).addEventListener('click', function () {
+          const images = [
+            { src: './imgs/production/3-' + i + '-1.jpg', thumb: './imgs/production/3-' + i + '-1.jpg', subHtml: '<p>章鱼丸</p>' },
+            { src: './imgs/production/3-' + i + '-2.jpg', thumb: './imgs/production/3-' + i + '-2.jpg', subHtml: '<p>章鱼丸</p>' },
+            { src: './imgs/production/3-' + i + '-3.jpg', thumb: './imgs/production/3-' + i + '-3.jpg', subHtml: '<p>章鱼丸</p>' },
+          ];
+          initializeGallery(images);
+        });
+      }
+      for (let i = 1; i <= 6; i++) {
+        document.getElementById('box4-' + i).addEventListener('click', function () {
+          const images = [
+            { src: './imgs/production/4-' + i + '-1.jpg', thumb: './imgs/production/4-' + i + '-1.jpg', subHtml: '<p>章鱼丸</p>' },
+            { src: './imgs/production/4-' + i + '-2.jpg', thumb: './imgs/production/4-' + i + '-2.jpg', subHtml: '<p>章鱼丸</p>' },
+            { src: './imgs/production/4-' + i + '-3.jpg', thumb: './imgs/production/4-' + i + '-3.jpg', subHtml: '<p>章鱼丸</p>' },
+          ];
+          initializeGallery(images);
+        });
+      }
+    }
+    handleImg()
+
+    function goRoom(url) {
+      window.location = url;
     }
     const title = [
       "火锅丸系列",
       "关东煮系列",
       "菜肴系列",
       "海制品系列",
-      "小包装系列",
+      "大礼包系列",
     ];
-    var swiper = new Swiper(".mySwiper", {
+    let index = Number(window.location?.search.substr(6, 1))
+    window.onload = function () {
+      var swiper = new Swiper(".mySwiper", {
+        initialSlide: index,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return (
+              '<span class="' + className + '">' + title[index] + "</span>"
+            );
+          },
+        },
+      });
+
+    }
+    var mySwiper = new Swiper('#swiper', {
+      loop: true,
+      // autoplay: true,
       pagination: {
-        el: ".swiper-pagination",
+        el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-          return (
-            '<span class="' + className + '">' + title[index] + "</span>"
-          );
+          let texts = ['骏马食品工厂', '骏马房地产', '骏马酒店']
+          let texten = ['Junma Real Estate', 'Junma Food Factory', 'Junma Hotel']
+          return `
+                    <div  class="${className} swiperItem">
+                        <div class='bullet'></div>
+                        <div class="swiper-pagination-text">
+                            <p class='text-2xl'>${texts[index]}<p>
+                            <p>${texten[index]}<p>
+                                </div>
+                    </div>
+                    `;
         },
       },
-    });
+    })
   </script>
 </body>
 

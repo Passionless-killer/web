@@ -62,6 +62,9 @@
       width: 24%;
       margin-bottom: 32px;
     }
+    .item p {
+      padding: 8px 0;
+    }
     .swiper-pagination-bullet {
       height: 36px;
       line-height: 36px;
@@ -71,6 +74,9 @@
     .item {
       width: 48%;
       margin-bottom: 16px;
+    }
+    .item p {
+      padding: 4px 0;
     }
     .swiper-pagination-bullet {
       margin: 8px 2px;

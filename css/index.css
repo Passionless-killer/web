@@ -30,7 +30,7 @@ header {
   /* width: 100vw; */
   height: 80px;
   display: flex;
-  padding: 0 40px;
+  padding: 12px 40px;
   justify-content: space-between;
   align-items: center;
   color: var(--text-color);
@@ -38,7 +38,7 @@ header {
 }
 
 header a {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 header nav {
@@ -325,6 +325,7 @@ textarea:focus {
 
   .cate1 img {
     width: 40%;
+    height: fit-content;
   }
 
   .cate p {
@@ -341,7 +342,7 @@ textarea:focus {
     display: flex;
   }
 
-  .probox img {
+  .probox picture {
     width: 20%;
     margin-bottom: 16px;
   }
@@ -414,7 +415,7 @@ input:hover {
 
   header {
     /* width: 100vw; */
-    height: 12vw;
+    height: 16vw;
     background-color: #fff;
     position: sticky;
     top: 0;
@@ -436,7 +437,7 @@ input:hover {
 
   .logo {
     margin-left: 24px;
-    width: 40%;
+    width: 46%;
   }
 
   .burger-line1,
@@ -610,14 +611,14 @@ input:hover {
     padding: 15px 20%;
   }
 
-  .probox {
-    padding-left: 6%;
-    padding-right: 6%;
-  }
+  /*.probox {*/
+  /*  padding-left: 6%;*/
+  /*  padding-right: 6%;*/
+  /*}*/
 
-  .probox img:nth-child(-n + 4) {
-    width: 48%;
-    margin-bottom: 16px;
+  .probox picture:nth-child(-n + 4) {
+       width: 49%;
+    margin-bottom: 2vw;
   }
 
   .link div {

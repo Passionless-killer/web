@@ -241,79 +241,82 @@
       </div>
     </div>
 
-  </div>
 
-  <div class="relative mt-4">
-    <picture class="d-block w-100">
-      <source media="(max-width: 1100px)" srcset="./imgs/mobile/orderGb.png" />
-      <source media="(min-width: 1100px)" srcset="./imgs/pc/orderGb.png" />
-      <img class="" width="100%" src="./imgs/pc/orderGb.png" alt=" ">
-    </picture>
-    <form class="absolute  top-0  h-full w-full bg-[#0000008f] flex items-end justify-center flex-wrap gap-x-4 py-4">
-      <input type="text" id="name" name="name" placeholder="请输入你的姓名" class="text-xl bg-white rounded-md  p-2 w-80" />
-      <input type="email" id="email" name="email" placeholder="请输入你的电话"
-        class="bg-white p-2 rounded-md w-[240px]  text-xl" />
-      <select value=" " class=" p-2 rounded-md w-[240px]  text-xl" id="message" name="message" placeholder="请选择房型">
-        <option value="">请选择房型</option>
-        <option value="0">行政双床</option>
-        <option value="1">行政大床</option>
-        <option value="2">家庭套房</option>
-        <option value="3">行政套房</option>
-        <option value="4">棋牌房房</option>
-      </select>
+    <div class="relative mt-4"
+    onclick="goRoom('https://hotels.ctrip.com/hotels/101029529.html?cityid=619#ctm_ref=www_hp_bs_lst','_blank')"
 
-      <div class="w-full text-center">
-        <button class="  px-6 py-2 rounded-md  text-white bg-[#AB2125]" type="submit">提交留言</button>
-      </div>
-    </form>
+    >
+      <picture class="d-block w-100">
+        <source media="(max-width: 1100px)" srcset="./imgs/mobile/orderGb.png" />
+        <source media="(min-width: 1100px)" srcset="./imgs/pc/orderGb.png" />
+        <img class="" width="100%" src="./imgs/pc/orderGb.png" alt=" ">
+      </picture>
+      <form class="absolute  top-0  h-full w-full bg-[#0000008f] flex items-end justify-center flex-wrap gap-x-4 py-4">
+        <input type="text" id="name" name="name" placeholder="请输入你的姓名" class="text-xl bg-white rounded-md  p-2 w-80" />
+        <input type="email" id="email" name="email" placeholder="请输入你的电话"
+          class="bg-white p-2 rounded-md w-[240px]  text-xl" />
+        <select value=" " class=" p-2 rounded-md w-[240px]  text-xl" id="message" name="message" placeholder="请选择房型">
+          <option value="">请选择房型</option>
+          <option value="0">行政双床</option>
+          <option value="1">行政大床</option>
+          <option value="2">家庭套房</option>
+          <option value="3">行政套房</option>
+          <option value="4">棋牌房房</option>
+        </select>
 
-  </div>
-  <footer class="bg-[#282e31] mt-0 text-white">
-    <div class="box flex justify-between">
-      <div class="text-start max-w-[46vw]">
-        <div class="text-xl">联系我们</div>
-        <div class="my-4 flex">客服电话:<div>
-            <p>0576-86882999</p>
-            <p>0576-81857777</p>
-          </div>
+        <div class="w-full text-center">
+          <button class="  px-6 py-2 rounded-md  text-white bg-[#AB2125]" type="submit">提交留言</button>
         </div>
-        <div class="flex">
-          <div>酒店位置:</div>
-          <div class="flex-1">浙江省台州市温岭市石塘镇曙光大道9号</div>
-        </div>
-      </div>
-      <div class="text-center">
-        <div>关注我们</div>
-        <div class="my-2 flex justify-center"><img src="./imgs/qrcode.webp" class=" w-[40%] " /></div>
-        <div>微信公众号</div>
-      </div>
+      </form>
 
     </div>
-    <hr class="h-[1px] w-[90%] m-auto py-2" />
+    </div>
+    <footer class="bg-[#282e31] mt-0 text-white">
+      <div class="box flex justify-between">
+        <div class="text-start max-w-[46vw]">
+          <div class="text-xl">联系我们</div>
+          <div class="my-4 flex">客服电话:<div>
+              <p>0576-86882999</p>
+              <p>0576-81857777</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div>酒店位置:</div>
+            <div class="flex-1">浙江省台州市温岭市石塘镇曙光大道9号</div>
+          </div>
+        </div>
+        <div class="text-center">
+          <div>关注我们</div>
+          <div class="my-2 flex justify-center"><img src="./imgs/qrcode.webp" class=" w-[40%] " /></div>
+          <div>微信公众号</div>
+        </div>
+
+      </div>
+          <hr class="h-[1px] w-[90%] m-auto py-2" />
     <p class="text-center py-2"> <a href="https://beian.miit.gov.cn" target="_blank">浙ICP备2024140005号-1</a></p>
+    </footer>
 
-  </footer>
-  <script src="./js/index.js"></script>
-  <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/swiper-bundle.js"> </script>
-  <script src="./js/swiper-bundle.min.js"> </script>
-  <script src="./js/wow.js"> </script>
-  <script>
-    new WOW({ animateClass: 'animated', boxClass: 'wow' }).init()
-    function goRoom(type) {
-      window.location = type.length > 2 ? type : './room.html?type=' + type
-
-    }
-    var mySwiper = new Swiper('.swiper', {
-      loop: true,
-      autoplay: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          let texts = ['骏马食品工厂', '骏马房地产', '骏马酒店']
-          let texten = ['Junma Real Estate', 'Junma Food Factory', 'Junma Hotel']
-          return `
+    <script src="./js/index.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.js"> </script>
+    <script src="./js/swiper-bundle.min.js"> </script>
+    <script src="./js/wow.js"> </script>
+    <script>
+      new WOW({ animateClass: 'animated', boxClass: 'wow' }).init()
+      function goRoom(type,way) {
+      if(!way){  window.location = type.length > 2 ? type : './room.html?type=' + type}
+else{ window.open(type)}
+      }
+      var mySwiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          renderBullet: function (index, className) {
+            let texts = ['骏马食品工厂', '骏马房地产', '骏马酒店']
+            let texten = ['Junma Real Estate', 'Junma Food Factory', 'Junma Hotel']
+            return `
                     <div  class="${className} swiperItem">
                         <div class='bullet'></div>
                         <div class="swiper-pagination-text">
@@ -322,10 +325,10 @@
                                 </div>
                     </div>
                     `;
+          },
         },
-      },
-    })
-  </script>
+      })
+    </script>
 </body>
 
 </html>
